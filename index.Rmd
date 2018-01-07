@@ -32,6 +32,8 @@ output:
 
 **Text**: *Investments* by Bodie, Kane, and Marcus, 8th edition (or later), ISBN: 0077261453.
 
+**Supplementary Materials**: [5-Minute Finance](https://www.5minutefinance.org/).
+
 ## Description
 
 An introductory survey of the fundamental principles of investment management.
@@ -97,7 +99,7 @@ cat(tabl)
 ```
 </center>
 
-## EXAMS
+## Exams
 
 There will be three exams (two during the semester and a final exam). Normally no make-up exams will be given.  Failure to take an exam will result in a grade of zero for the missed exam.  Make-up exams will only be allowed for {\it extraordinary} and {\it verifiable} reasons.
 
@@ -119,7 +121,7 @@ I'll assign several homeworks throughout the
 semester that involve either trading in your brokerage accounts, or downloading data in R and
 performing some calculation/analyses. If I give pop quizzes, these grades will be included here. 
 
-## BROKERAGE ACCOUNTS
+## Brokerage Accounts
 
 We will use paper trading accounts provided by Interactive Brokers. These
 trading accounts are the exact same as the actual brokerage accounts---except the money isn’t real.
@@ -158,7 +160,7 @@ Your application should have something to do with currency markets, and should b
 
 To get started you will want to use the RStudio development environment for R.  This is available in the Still hall computer lab, or you can install it for free on your own computer [from here](https://www.rstudio.com/products/rstudio/download/).  If you install it on your own computer you'll need to install R first.  You can get [R here](https://cran.r-project.org/) 
 
-## COURSE COMMUNICATION
+## Course Communication
 
 All important/official announcements will either be posted on Blackboard or emailed to each student's SUNY Poly email account. In the past I have posted helpful information to: [Complete Markets](http://www.complete-markets.com).  To see information relating to your course type `FIN 376` in the search bar at the upper left of the web page. However, in the future I will post to [my GitHub io site](https://matt-brigida.github.io).  Some examples of helpful information are spreadsheets which assist in studying for exams or completing homeworks, answers to questions other students have asked (of course I will not include who asked the question), and useful [R](http://www.r-project.org) code.  You can see most of the code I write in my [GitHub repos](https://github.com/Matt-Brigida).
 
@@ -198,7 +200,7 @@ cat(tabl)
 
 There is no special consideration if you need a certain grade in this course to graduate.  **If you require a certain grade in this class to graduate it is your responsibility to earn that grade.** Specifically if you receive a `D` in this course I will not allow you to do extra assignments after the course is complete in exchange for a higher grade. 
 
-## GENERAL NOTES
+## General Notes
 
 #. The instructor is not involved in any way with your adding and dropping the course.  It is the student's responsibility to abide by all proper procedures and dates.
 #. Attending class, and reading the text is required.
@@ -212,7 +214,7 @@ dates.
 #. Disruptive behavior in the classroom will not be tolerated.
 #. You may not use tobacco products in class.
 
-## TENTATIVE OUTLINE
+## Tentative Outline
 
 - 1/15: Chapter 1
 - 1/22:  Chapter 2 \& 3
