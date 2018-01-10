@@ -149,7 +149,7 @@ Students will create a Shiny interactive web application.  To do so you'll first
 
 You are free to create the account under a pseudonym, so no one can publicly identify you as the owner of the account.  However, the web application is a useful tool to show off your work, and is something that can go on your resume (with a link to the application).  So you may prefer to use your real name.  My user name is `mattbrigida`.
 
-Your application should have something to do with currency markets, and should be at least somewhat original.  See this [gallery of applications](http://shiny.rstudio.com/). Possible applications may be:
+Your application should have something to do with financial markets, and should be at least somewhat original.  See this [gallery of applications](http://shiny.rstudio.com/). Possible applications may be:
 
 - Plot a time series of stock prices, returns, or volatility.
 - **Financial Advisers:**  Create an app which will return target asset allocation given a person's age and investing goals/risk tolerance.
