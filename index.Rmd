@@ -163,6 +163,8 @@ be nonexistent. **If you lose your password, or forget your username, etc, you w
 account for the semester.** In this case you will have to trade in another student’s account, or mine.
 Please pay attention while setting up your account, and write everything down.
 
+See [**here**](#brti) example of the data we can pull using our IB accounts.  You may want to think if interesting projects/analyses you can do with access to such data.
+
 ## Black-Scholes Project
 
 In groups, students will create a spreadsheet which will value an option on a non-dividend
@@ -262,3 +264,16 @@ dates.
 - 4/16: Chapter 23
 - 4/23: Trading, exam review, **and the last day to present your projects.**
 - 4/30: Finals Week
+
+## BRTI Tick Data {#brti}
+
+Below are millisecond data for the Bitcoin Real-Time Index on Jan 3, 2018.  The data are pulled via the IB API.  With data of this type, you can dicover interesting features of market data---for example, notice the "last trade" is often outside of the bid/offer.  This is particularly important to understand when trading illiquid contracts, such as some options.  You can left-click your mouse, and drag, to zoom in on subintervals.
+
+```{r}
+library(dygraphs)
+
+book <- readRDS("./jan_fut_12_18_book.rds")
+
+dygraph(book['2018-01-03 09:30:00/2018-01-03 16:00:00'])
+
+```
