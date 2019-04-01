@@ -6,7 +6,7 @@ output:
     highlight: kate
 ---
 
-```{r knitr_init, echo=FALSE, cache=FALSE}
+```{r knitr_init, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
 library(knitr)
 library(rmdformats)
 
@@ -253,13 +253,13 @@ dates.
 - 2/4:  Chapter 3 \& 4
 - 2/11:Chapter 14
 - 2/18: (exam review)
-- 2/25: **10/03 (Exam 1)** & Chapter 15
+- 2/25: **Exam 1** & Chapter 15
 - 3/4:  Chapter 16
 - 3/11: Spring Break 
 - 3/18: Chapter 20
 - 3/25: Chapter 21
 - 4/1: (exam review)
-- 4/8: **4/2 (Exam 2)** & Chapter 21
+- 4/8: **Exam 2** & Chapter 21
 - 4/15:Chapter 22 
 - 4/22: Chapter 23
 - 4/29: Trading, exam review, **and the last day to present your projects.**
