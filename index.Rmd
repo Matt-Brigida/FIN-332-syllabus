@@ -295,3 +295,7 @@ dygraph(book['2018-01-03 09:30:00/2018-01-03 16:00:00'])
 >Albany Campus
 >Suite 309, Students Services Office
 >NanoFab South
+
+## Answers to Online Questions
+
+[On momentum trading strategies such as the port-earnings announcement drift anomaly.](https://www.youtube.com/watch?v=1sOqYRdnP_g&lc=Ugx7asEE_5LfM1d8DiN4AaABAg.8w_Di74z1tC8w__IIMlWOa)
