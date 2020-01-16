@@ -1,9 +1,11 @@
 ---
 title: 
 date: "January 15, 2019"
-output: 
-  rmdformats::html_clean:
-    highlight: kate
+output: pdf_document
+always_allow_html: true
+## output: 
+##   rmdformats::html_clean:
+##     highlight: kate
 ---
 
 ```{r knitr_init, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
@@ -280,7 +282,7 @@ dygraph(book['2018-01-03 09:30:00/2018-01-03 16:00:00'])
 
 >Accommodations for Students with Disabilities
 
->In compliance with the Americans with Disabilities Act of 1990 and Section 504 of the Rehabilitation Act, SUNY Polytechnic Institute is committed to ensuring comprehensive educational access and accommodations for all registered students seeking access to meet course requirements and fully participate in programs and activities.  Students with documented disabilities or medical conditions are encouraged to request these services by registering with the Office of Disability Services.  For information related to these services or to schedule an appointment, please contact the Office of Disability Services using the information provided below.
+>In compliance with the Americans with Disabilities Act of 1990 and Section 504 of the Rehabilitation Act, SUNY Polytechnic Institute is committed to ensuring comprehensive educational access and accommodations for all registered students seeking access to meet course requirements and fully participate in programs and activities.  Students with documented disabilities or medical conditions are encouraged to request these services by registering with the Office of Disability Services.  For information related to these services or to schedule an appointment, please contact the Office of Disability Services using the information provided below.
 
 >Evelyn Lester, Director
 >Office of Disability Services
