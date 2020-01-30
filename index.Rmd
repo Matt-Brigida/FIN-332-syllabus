@@ -1,11 +1,11 @@
 ---
 title: 
 date: "January 15, 2019"
-output: pdf_document
-always_allow_html: true
-## output: 
-##   rmdformats::html_clean:
-##     highlight: kate
+## output: pdf_document
+## always_allow_html: true
+output: 
+  rmdformats::html_clean:
+    highlight: kate
 ---
 
 ```{r knitr_init, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
@@ -149,6 +149,8 @@ account for the semester.** In this case you will have to trade in another stude
 Please pay attention while setting up your account, and write everything down.
 
 See [**here**](#brti) example of the data we can pull using our IB accounts.  You may want to think if interesting projects/analyses you can do with access to such data.
+
+[Also check out the IB Quant Blog.  It is a very good resource.](https://www.ibkr.com/quant)
 
 ## Black-Scholes Project
 
