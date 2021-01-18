@@ -1,6 +1,6 @@
 ---
 title: 
-date: "January 15, 2019"
+date: "January 15, 2021"
 ## output: pdf_document
 ## always_allow_html: true
 output: 
@@ -38,11 +38,13 @@ opts_knit$set(width=75)
 
 **Office**: Donovan 1277
 
-**Office Hours**: Monday and Wednesday 2--3pm, and Tuesday 5:00--6:00
+**Office Hours**: Online for an hour before each class.
+<!-- Monday and Wednesday 2--3pm, and Tuesday 5:00--6:00 -->
 
 **Email**: matthew.brigida@sunyit.edu
 
-**Class Location**:  *Hybrid*, DON 1146.
+**Class Location**:  Online.
+<!-- *Hybrid*, DON 1146. -->
 
 **Class Day/Time**: MW, 12:00---1:50pm
 
