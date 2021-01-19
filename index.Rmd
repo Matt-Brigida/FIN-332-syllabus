@@ -180,7 +180,31 @@ Your application should have something to do with financial markets, and should 
 - A margin calculator.
 - Create a histogram or probability density plot for bond or stock returns.
 
-To get started you will want to use the RStudio development environment for R.  This is available in the Still hall computer lab, or you can install it for free on your own computer [from here](https://www.rstudio.com/products/rstudio/download/).  If you install it on your own computer you'll need to install R first.  You can get [R here](https://cran.r-project.org/) 
+To get started you will want to use the RStudio development environment for R.  This is available in the Still hall computer lab, or you can install it for free on your own computer [from here](https://www.rstudio.com/products/rstudio/download/).  If you install it on your own computer you'll need to install R first.  You can get [R here](https://cran.r-project.org/)
+
+## Optional Pairs Trade
+
+Implement the pairs trade methodology outlined in Gatev et. al (2006).
+
+@Article{Gatev_2006,
+  author       = {Gatev, Evan and Goetzmann, William N. and
+                  Rouwenhorst, K. Geert},
+  title	       = {Pairs Trading: Performance of a Relative-Value
+                  Arbitrage Rule},
+  year	       = 2006,
+  volume       = 19,
+  number       = 3,
+  pages	       = {797–827},
+  issn	       = {1465-7368},
+  doi	       = {10.1093/rfs/hhj020},
+  url	       = {http://dx.doi.org/10.1093/rfs/hhj020},
+  journal      = {Review of Financial Studies},
+  publisher    = {Oxford University Press (OUP)}
+}
+
+## Optional Optimal Portfolio
+
+Construct a Markowitz Mean-Variance Optimal portfolio.
 
 ## Course Communication
 
@@ -254,20 +278,35 @@ dates.
 <!-- - 11/26--12/8: Trading, exam review, **and the last day to present your projects.** -->
 <!-- - 12/10: Finals Week -->
 
-- 1/20: Chapter 1
-- 1/27:  Chapter 2 \& 3
-- 2/3:  Chapter 3 \& 4
-- 2/10: Chapter 14
-- 2/17: **Exam 1**
-- 2/24: Chapter 15
-- 3/2:  Chapter 16
-- 3/19: Spring Break?
-- 3/16: Chapter 20
-- 3/30: Chapter 21
-- 4/6: **Exam 2** 
-- 4/13:Chapter 22 
-- 4/20: Chapter 23
-- 4/27: Trading, exam review, **and the last day to present your projects.**
+<!-- - 1/20: Chapter 1 -->
+<!-- - 1/27:  Chapter 2 \& 3 -->
+<!-- - 2/3:  Chapter 3 \& 4 -->
+<!-- - 2/10: Chapter 14 -->
+<!-- - 2/17: **Exam 1** -->
+<!-- - 2/24: Chapter 15 -->
+<!-- - 3/2:  Chapter 16 -->
+<!-- - 3/19: Spring Break? -->
+<!-- - 3/16: Chapter 20 -->
+<!-- - 3/30: Chapter 21 -->
+<!-- - 4/6: **Exam 2**  -->
+<!-- - 4/13:Chapter 22  -->
+<!-- - 4/20: Chapter 23 -->
+<!-- - 4/27: Trading, exam review, **and the last day to present your projects.** -->
+
+- Week 1: Chapter 1
+- Week 2: Chapter 2 \& 3
+- Week 3:  Chapter 3 \& 4
+- Week 4:  Chapter 14
+- Week 5:  **Exam 1**
+- Week 6:  Chapter 15
+- Week 7:  Chapter 16
+- Week 8:  Spring Break?
+- Week 9:  Chapter 20
+- Week 10:  Chapter 21
+- Week 11: **Exam 2**
+- Week 12: Chapter 22
+- Week 13:  Chapter 23
+- Week 14:  Trading, exam review, **and the last day to present your projects.**
 
 ## BRTI Tick Data {#brti}
 
