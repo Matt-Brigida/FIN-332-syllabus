@@ -296,16 +296,16 @@ dates.
 - Week 1: Chapter 1
 - Week 2: Chapter 2 \& 3
 - Week 3:  Chapter 3 \& 4
-- Week 4:  Chapter 14
-- Week 5:  **Exam 1**
-- Week 6:  Chapter 15
-- Week 7:  Chapter 16
-- Week 8:  Spring Break?
-- Week 9:  Chapter 20
-- Week 10:  Chapter 21
-- Week 11: **Exam 2**
-- Week 12: Chapter 22
-- Week 13:  Chapter 23
+- Week 4:  Review and Market Microstructure
+- Week 5:  **Exam 1, March 10th**
+- Week 6:  Options and Option Markets
+- Week 7:  Options and Option Markets
+- Week 8:  Options and Option Markets
+- Week 9:  Options and Option Markets
+- Week 10:  **Exam 2, April 14** 
+- Week 11: Futures
+- Week 12: Futures
+- Week 13: Futures
 - Week 14:  Trading, exam review, **and the last day to present your projects.**
 
 ## BRTI Tick Data {#brti}
