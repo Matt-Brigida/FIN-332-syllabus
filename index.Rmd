@@ -1,11 +1,11 @@
 ---
 title: 
 date: "January 15, 2021"
-output: pdf_document
-always_allow_html: true
-## output: 
-##   rmdformats::html_clean:
-##     highlight: kate
+# output: pdf_document
+# always_allow_html: true
+output: 
+  rmdformats::html_clean:
+    highlight: kate
 ---
 
 ```{r knitr_init, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
@@ -50,7 +50,9 @@ opts_knit$set(width=75)
 
 **Text**: [*Investments* by Bodie, Kane, and Marcus, 8th edition (or later), ISBN: 0077261453](http://www.amazon.com/Investments-8th-Edition-Zvi-Bodie/dp/0077261453/ref=sr_1_5?ie=UTF8&qid=1407685749&sr=8-5&keywords=investment+bodie+kane+marcus)
 
-**Supplementary Materials**: [5-Minute Finance](https://www.5minutefinance.org/).
+**Supplementary Materials**: 
+-  [5-Minute Finance](https://www.5minutefinance.org/).
+-  [Financial Education](https://financial-education.github.io/investments.html)
 
 ## Description
 
