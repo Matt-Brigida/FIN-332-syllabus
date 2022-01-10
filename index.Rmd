@@ -302,12 +302,12 @@ dates.
 - Week 2: Chapter 2 \& 3
 - Week 3:  Chapter 3 \& 4
 - Week 4:  Review and Market Microstructure
-- Week 5:  **Exam 1, March 10th**
+- Week 5:  **Exam 1, March 16th**
 - Week 6:  Options and Option Markets
 - Week 7:  Options and Option Markets
 - Week 8:  Options and Option Markets
 - Week 9:  Options and Option Markets
-- Week 10:  **Exam 2, April 14** 
+- Week 10:  **Exam 2, April 23** 
 - Week 11: Futures
 - Week 12: Futures
 - Week 13: Futures
