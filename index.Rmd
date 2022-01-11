@@ -1,11 +1,11 @@
 ---
 title: 
 date: "January 15, 2022"
-# output: pdf_document
-# always_allow_html: true
-output: 
-  rmdformats::html_clean:
-    highlight: kate
+output: pdf_document
+always_allow_html: true
+## output: 
+##   rmdformats::html_clean:
+##     highlight: kate
 ---
 
 ```{r knitr_init, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
@@ -326,23 +326,15 @@ dygraph(book['2018-01-03 09:30:00/2018-01-03 16:00:00'])
 
 ```
 
-## Course Syllabus Disclosure Statement Spring 2019
+## Course Syllabus Disclosure Statement Spring 2022
 
->Accommodations for Students with Disabilities
+>Accommodations for Students with Disabilities:
 
->In compliance with the Americans with Disabilities Act of 1990 and Section 504 of the Rehabilitation Act, SUNY Polytechnic Institute is committed to ensuring comprehensive educational access and accommodations for all registered students seeking access to meet course requirements and fully participate in programs and activities.  Students with documented disabilities or medical conditions are encouraged to request these services by registering with the Office of Disability Services.  For information related to these services or to schedule an appointment, please contact the Office of Disability Services using the information provided below.
+>In compliance with the Americans with Disabilities Act of 1990 and Section 504 of the Rehabilitation Act, SUNY Polytechnic Institute is committed to ensuring comprehensive educational access and accommodations for all registered students seeking access to meet course requirements and fully participate in programs and activities.  Students with documented disabilities or medical conditions are encouraged to request these services by registering with the Office of Disability Services. Please request accommodations early in the semester, or as soon as you become registered with Disability Services, so that we have adequate time to arrange your approved academic accommodation/s.  Once Disability Services creates your accommodation plan, it is your responsibility to provide me a copy of the accommodation plan.
 
->Evelyn Lester, Director
->Office of Disability Services
->lestere@sunypoly.edu
->(315) 792-7170
->
->Utica Campus
->Peter J. Cayan Library, L145
->
->Albany Campus
->Suite 309, Students Services Office
->NanoFab South
+>If you experience any access concerns that may require the need for adaptive or alternate format/presentation of materials, reach out to me or Disability Services right away. 
+
+>For information related to these services or to schedule an appointment, please contact the Office of Disability Services using the information provided below.  The Office of Disability Services can accommodate virtual meeting requests.  The website has helpful information, and the link can be found here: https://sunypoly.edu/student-life/diversity-equity-inclusion/disabilities-services/contact-us.html
 
 ## Answers to Online Questions
 
