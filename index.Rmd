@@ -1,11 +1,11 @@
 ---
 title: 
 date: "January 15, 2022"
-output: pdf_document
-always_allow_html: true
-## output: 
-##   rmdformats::html_clean:
-##     highlight: kate
+## output: pdf_document
+## always_allow_html: true
+output: 
+  rmdformats::html_clean:
+    highlight: kate
 ---
 
 ```{r knitr_init, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
@@ -34,7 +34,7 @@ opts_knit$set(width=75)
 </center>
 <br>
 <br>
-**Instructor**: Matthew Brigida, Ph.D.
+**Instructor**: Anthony Vennero, Ph.D.
 
 **Office**: Donovan 1277
 
