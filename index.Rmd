@@ -41,7 +41,7 @@ opts_knit$set(width=75)
 **Office Hours**: Monday and Wednesday 2--3pm
 <!-- Online for an hour before each class. -->
 
-**Email**: matthew.brigida@sunyit.edu
+**Email**: vennera@sunypoly.edu
 
 **Class Location**: *Hybrid*, DON 1146.
 <!-- Online. -->
