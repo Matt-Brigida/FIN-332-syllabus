@@ -1,11 +1,11 @@
 ---
 title: 
-date: "January 15, 2022"
-## output: pdf_document
-## always_allow_html: true
-output: 
-  rmdformats::html_clean:
-    highlight: kate
+date: "August 15, 2022"
+output: word_document
+always_allow_html: true
+## output: 
+##   rmdformats::html_clean:
+##     highlight: kate
 ---
 
 ```{r knitr_init, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
@@ -34,17 +34,17 @@ opts_knit$set(width=75)
 </center>
 <br>
 <br>
-**Instructor**: Anthony Vennero, Ph.D.
+**Instructor**: Matt Brigida, Ph.D.
 
 **Office**: Donovan 1277
 
-**Office Hours**: Monday and Wednesday 2--3pm
-<!-- Online for an hour before each class. -->
+**Office Hours**: Online for an hour before each class.
+<!--- Monday and Wednesday 2--3pm -->
 
-**Email**: vennera@sunypoly.edu
+**Email**: matthew.brigida@sunypoly.edu
 
-**Class Location**: *Hybrid*, DON 1146.
-<!-- Online. -->
+**Class Location**: Online.
+<!-- *Hybrid*, DON 1146. -->
 
 **Class Day/Time**: MW, 12:00---1:50pm
 
