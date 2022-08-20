@@ -1,11 +1,11 @@
 ---
 title: 
 date: "August 15, 2022"
-output: word_document
-always_allow_html: true
-## output: 
-##   rmdformats::html_clean:
-##     highlight: kate
+## output: pdf_document
+## always_allow_html: true
+output: 
+  rmdformats::html_clean:
+    highlight: kate
 ---
 
 ```{r knitr_init, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
@@ -46,7 +46,8 @@ opts_knit$set(width=75)
 **Class Location**: Online.
 <!-- *Hybrid*, DON 1146. -->
 
-**Class Day/Time**: MW, 12:00---1:50pm
+**Class Day/Time**: Asynchronous
+<!-- MW, 12:00---1:50pm -->
 
 **Text**: [*Investments* by Bodie, Kane, and Marcus, 8th edition (or later), ISBN: 0077261453](http://www.amazon.com/Investments-8th-Edition-Zvi-Bodie/dp/0077261453/ref=sr_1_5?ie=UTF8&qid=1407685749&sr=8-5&keywords=investment+bodie+kane+marcus)
 
