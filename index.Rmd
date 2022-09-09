@@ -163,14 +163,13 @@ See [**here**](#brti) example of the data we can pull using our IB accounts.  Yo
 
 Students will create a spreadsheet which will:
 
-1.  value an option on a non-dividend paying stock using the Black-Scholes (1973) option pricing model.
-2.  Further, the group must calculate the stock's historical annualized volatility, and get an estimate of the implied volatility. To do so the group must show it is able to download a recent time series of the underlying stock price, convert these prices into a time series of returns, calculate the standard deviation of the returns, and then annualize the standard deviation (this is the stock annualized volatility which is a parameter in the option pricing model).
+1.  Value an option on a non-dividend paying stock using the Black-Scholes (1973) option pricing model.
+2.  Calculate the stock's historical annualized volatility, and get an estimate of the implied volatility. To do so the you must show it is able to download a recent time series of the underlying stock price, convert these prices into a time series of returns, calculate the standard deviation of the returns, and then annualize the standard deviation (this is the stock annualized volatility which is a parameter in the option pricing model).
+3.  Calculate the value of the option by Monte Carlo.
+4.  Calculate the Greeks.
 
+Each student must be ready to explain any part of the spreadsheet.
 
-
-Each student in the group must be ready to
-explain any part of the spreadsheet. In the event a student in a group cannot sufficiently answer
-questions regarding the calculations, the student may receive a lower grade than the rest of the group. 
 
 ## Optional Web App Project
 
