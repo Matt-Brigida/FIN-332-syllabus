@@ -253,7 +253,7 @@ cat(tabl)
 
 There is no special consideration if you need a certain grade in this course to graduate.  **If you require a certain grade in this class to graduate it is your responsibility to earn that grade.** Specifically if you receive a `D` in this course I will not allow you to do extra assignments after the course is complete in exchange for a higher grade. 
 
-## General Notes
+## General Notes (most relate only to in class sections)
 
 #. The instructor is not involved in any way with your adding and dropping the course.  It is the student's responsibility to abide by all proper procedures and dates.
 #. Attending class, and reading the text is required.
