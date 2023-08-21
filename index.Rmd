@@ -159,7 +159,7 @@ See [**here**](#brti) example of the data we can pull using our IB accounts.  Yo
 
 [Also check out the IB Quant Blog.  It is a very good resource.](https://www.ibkr.com/quant)
 
-## Black-Scholes Project
+## Required Black-Scholes Project
 
 Students will create a spreadsheet which will:
 
@@ -172,6 +172,8 @@ Each student must be ready to explain any part of the spreadsheet.
 
 
 ## Optional Web App Project
+
+**Optional Projects are only for students doing well in the course.  They should not be used to attempt to increase your grade.**
 
 Students will create a Shiny interactive web application.  To do so you'll first need to sign up for a free [shinyapps](https://www.shinyapps.io/) account.
 
@@ -214,7 +216,15 @@ Construct a Markowitz Mean-Variance Optimal portfolio.
 
 ## Course Communication
 
-All important/official announcements will either be posted on Blackboard or emailed to each student's SUNY Poly email account. In the past I have posted helpful information to: [Complete Markets](http://www.complete-markets.com).  To see information relating to your course type `FIN 376` in the search bar at the upper left of the web page. However, in the future I will post to [my GitHub io site](https://matt-brigida.github.io).  Some examples of helpful information are spreadsheets which assist in studying for exams or completing homeworks, answers to questions other students have asked (of course I will not include who asked the question), and useful [R](http://www.r-project.org) code.  You can see most of the code I write in my [GitHub repos](https://github.com/Matt-Brigida).
+All important/official announcements will either be posted on D2L or emailed to each student's SUNY Poly email account. All student questions (other than those that contain personal information) should be asked in class or posted to a discussion board.  Do not email me questions such as "When is the exam?".  These types of questions should be asked in class.  
+
+## Missed Classes
+
+If you are not in class you are responsible for figuring out what you missed.  I will not email you a summary of what we covered in the class.  
+
+## Re-Grading Assignments
+
+I normally do not regrade assignments, however if I do so your grade may increase **or decrease** when regraded.  
 
 ## Grading
 
