@@ -278,6 +278,8 @@ dates.
 
 ## Tentative Outline
 
+**All due dates are in the ouline below.  There are no due dates listed in D2L.**
+
 <!-- - 8/27: Chapter 1 -->
 <!-- - 9/3:  Chapter 2 \& 3 -->
 <!-- - 9/10: Chapter 3 \& 4 -->
