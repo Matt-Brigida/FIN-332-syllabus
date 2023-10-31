@@ -161,14 +161,14 @@ See [**here**](#brti) example of the data we can pull using our IB accounts.  Yo
 
 ## Required Black-Scholes Project
 
-Students will create a spreadsheet which will:
+First, choose a stock whose ticker starts with the same letter that your last name starts with.  For example, since my last name is Brigida I may choose Boeing (ticker BA).  Once you have chosen your stock create a spreadsheet which will:
 
-1.  Value an option on a non-dividend paying stock using the Black-Scholes (1973) option pricing model.
+1.  Value an option on the stock using the Black-Scholes (1973) option pricing model.
 2.  Calculate the stock's historical annualized volatility, and get an estimate of the implied volatility. To do so the you must show it is able to download a recent time series of the underlying stock price, convert these prices into a time series of returns, calculate the standard deviation of the returns, and then annualize the standard deviation (this is the stock annualized volatility which is a parameter in the option pricing model).
 3.  Calculate the value of the option by Monte Carlo.
 4.  Calculate the Greeks.
 
-Each student must be ready to explain any part of the spreadsheet.
+You should be ready to explain any part of the spreadsheet.
 
 
 ## Optional Web App Project
