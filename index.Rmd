@@ -1,6 +1,6 @@
 ---
 title: 
-date: "August 28, 2023"
+date: "August 1, 2024"
 ## output: pdf_document
 ## always_allow_html: true
 output: 
@@ -38,18 +38,20 @@ opts_knit$set(width=75)
 
 **Office**: Donovan 1277
 
-<!-- **Office Hours**: On request. -->
-Tuesday 4--6pm
+**Online Office Hours**: On request.
+<!-- Tuesday 4--6pm -->
 
 **Email**: matthew.brigida@sunypoly.edu
 
-<!-- **Class Location**: Online. -->
-*Hybrid*, DON 1157
+**Class Location**: Online.
+<!-- *Hybrid*, DON 1157 -->
 
-<!-- **Class Day/Time**: Asynchronous -->
-Tuesday, 6:00---9:30pm
+**Class Day/Time**: Asynchronous
+<!-- Tuesday, 6:00---9:30pm -->
 
-**Text**: [*Investments* by Bodie, Kane, and Marcus, 8th edition (or later), ISBN: 0077261453](http://www.amazon.com/Investments-8th-Edition-Zvi-Bodie/dp/0077261453/ref=sr_1_5?ie=UTF8&qid=1407685749&sr=8-5&keywords=investment+bodie+kane+marcus)
+**Optional Text**: [*Investments* by Bodie, Kane, and Marcus, 8th edition (or later), ISBN: 0077261453](http://www.amazon.com/Investments-8th-Edition-Zvi-Bodie/dp/0077261453/ref=sr_1_5?ie=UTF8&qid=1407685749&sr=8-5&keywords=investment+bodie+kane+marcus)
+
+Strictly speaking, the *Investments* text is optional.  That said, you can often find a used copy online for less than $10, and in this case it is well worth the money.
 
 **Supplementary/Optional Materials**: 
 
