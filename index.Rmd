@@ -59,6 +59,13 @@ Strictly speaking, the *Investments* text is optional.  That said, I highly reco
 -  [Financial Education](https://financial-education.github.io/investments.html)
 -  [39 Arbitrages](https://www.amazon.com/39-Arbitrages-Matthew-Brigida-Ph-D-ebook/dp/B08MWYN5D4/ref=sr_1_1?dchild=1&keywords=39+arbitrages&qid=1614011029&sr=8-1&tag=duckduckgo-20)
 
+## Video Walkthrough of Syllabus
+
+```{r}
+library(vembedr)
+embed_youtube("4nHWC1Oeqt0")
+```
+
 ## Description
 
 An introductory survey of the fundamental principles of investment management.
