@@ -6871,9 +6871,28 @@ standard deviation of the returns, and then annualize the standard
 deviation (this is the stock annualized volatility which is a parameter
 in the option pricing model).</li>
 <li>Calculate the value of the option by Monte Carlo.</li>
-<li>Calculate the Greeks.</li>
+<li>Calculate the proportion of your stock’s return variance which is
+from the market and which is due to firm specific uncertainty.
+<!-- 4.  Calculate the Greeks. --></li>
 </ol>
-<p>You should be ready to explain any part of the spreadsheet.</p>
+<p>You should be ready to explain any part of the spreadsheet. For 4.
+consider the following regression:</p>
+<p><span class="math inline">\(r_s = \alpha + \beta_s r_m +
+e_s\)</span></p>
+<p>where <span class="math inline">\(r_s\)</span> are returns on your
+stock and <span class="math inline">\(r_m\)</span> are market returns.
+Then:</p>
+<p><span class="math inline">\(Var(r_s) = (\beta_s)^2 Var(r_m) +
+Var(e_s)\)</span></p>
+<p>because:</p>
+<p><span class="math inline">\(Cov(r_m, e_s) = 0\)</span></p>
+<p>Note, <span class="math inline">\(Var(X)\)</span> denotes the
+variance of <span class="math inline">\(X\)</span>, and is also often
+written as <span class="math inline">\(\sigma^2_X\)</span>.</p>
+<p><span class="math inline">\((\beta_s)^2 Var(r_m)\)</span> is the
+market’s contribution to your stock’s variance, and:</p>
+<p><span class="math inline">\(Var(e_s)\)</span> is the firm specific
+contribution.</p>
 </div>
 <div id="optional-web-app-project" class="section level2">
 <h2>Optional Web App Project</h2>

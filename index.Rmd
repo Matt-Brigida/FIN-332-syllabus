@@ -177,10 +177,26 @@ First, choose a stock whose ticker starts with the same letter that your last na
 1.  Value an option on the stock using the Black-Scholes (1973) option pricing model.
 2.  Calculate the stock's historical annualized volatility, and get an estimate of the implied volatility. To do so the you must show it is able to download a recent time series of the underlying stock price, convert these prices into a time series of returns, calculate the standard deviation of the returns, and then annualize the standard deviation (this is the stock annualized volatility which is a parameter in the option pricing model).
 3.  Calculate the value of the option by Monte Carlo.
-4.  Calculate the Greeks.
+4.  Calculate the proportion of your stock's return variance which is from the market and which is due to firm specific uncertainty.
+<!-- 4.  Calculate the Greeks. -->
 
-You should be ready to explain any part of the spreadsheet.
+You should be ready to explain any part of the spreadsheet.  For 4. consider the following regression:
 
+$r_s = \alpha + \beta_s r_m + e_s$
+
+where $r_s$ are returns on your stock and $r_m$ are market returns.  Then:
+
+$Var(r_s) = (\beta_s)^2 Var(r_m) + Var(e_s)$
+
+because:
+
+$Cov(r_m, e_s) = 0$
+
+Note, $Var(X)$ denotes the variance of $X$, and is also often written as $\sigma^2_X$.
+
+$(\beta_s)^2 Var(r_m)$ is the market's contribution to your stock's variance, and:
+
+$Var(e_s)$  is the firm specific contribution.
 
 ## Optional Web App Project
 
