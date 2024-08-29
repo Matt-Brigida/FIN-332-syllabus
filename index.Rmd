@@ -63,6 +63,7 @@ Strictly speaking, the *Investments* text is optional.  That said, I highly reco
 
 ```{r}
 library(vembedr)
+# use _suggest_embed() with the video's link
 embed_youtube("4nHWC1Oeqt0")
 ```
 
@@ -154,6 +155,13 @@ Trading assignments are here: https://github.com/Matt-Brigida/fin-332-trading-as
 *Market Trading Hours*: The stock and option markets are open from 9:30 am to 4pm each non-holiday weekday.  Therefore, you must make your trades within these times.
 
 I may assign other several homeworks throughout the semester that involve either trading in your brokerage accounts, or downloading data in R and performing some calculation/analyses. If I give pop quizzes, these grades will be included here. 
+
+Here is a video on the first 3 trading assignments:
+
+```{r}
+# suggest_embed("https://www.youtube.com/watch?v=uG7l0WaATDs")
+embed_youtube("uG7l0WaATDs")
+```
 
 ## Brokerage Accounts
 
