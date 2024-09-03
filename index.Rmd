@@ -163,6 +163,15 @@ Here is a video on the first 3 trading assignments:
 embed_youtube("uG7l0WaATDs")
 ```
 
+And a video on shorting stock:
+
+```{r}
+# suggest_embed("https://www.youtube.com/watch?v=bTP19kqiKEk")
+embed_youtube("bTP19kqiKEk")
+```
+
+
+
 ## Brokerage Accounts
 
 We will use paper trading accounts provided by Interactive Brokers. These
@@ -251,7 +260,11 @@ Construct a Markowitz Mean-Variance Optimal portfolio.
 
 ## Course Communication
 
-All important/official announcements will either be posted on D2L or emailed to each student's SUNY Poly email account. All student questions (other than those that contain personal information) should be asked in class or posted to a discussion board.  Do not email me questions such as "When is the exam?".  These types of questions should be asked in class.  
+All important/official announcements will either be posted on D2L or emailed to each student's SUNY Poly email account. All student questions (other than those that contain personal information) should be asked in class or posted to a discussion board.  Do not email me questions such as "When is the exam?".  These types of questions should be asked in class (or on a discussion board).  
+
+### How to send an email
+
+If you do send an email, be sure to include your course number (FIN 332) in the subject line.  Also you should send your email from your SUNY email account.  Emails from `gmail` or other similar addresses may not be read.  Lastly, make sure you are clear---for example if you are asking why you got a 0 on an assignment, be sure to include which assignment you are referring to. 
 
 ## Missed Classes
 
