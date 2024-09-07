@@ -316,6 +316,22 @@ In this course you have plenty of time to take exams and submit assignments.  Th
 
 Again, I'll note the stock market closes at 4pm.  So let's say you wait until 5 pm on the due date of the trading assignments to start working---you will receive a 0 grade because you can't complete the trades.  
 
+## A Note on Submitting Assignments
+
+Before you submit an assignment I suggest you take a step back, open the document, and ask yourself can anyone easily understand the answers and how they were generated.  This is an important skill a financial analyst must have---the ability to organize a document to efficiently convey information.  That is also why I do not provide template for assignment submissions.  Constructing a readable document is part of the assignment.
+
+## An Important Note on Meetings in 35W Courses
+
+If you signed up for a 35W course this is *asynchronous*.  [This is the definition of a 35W course from the SUNY Poly website](https://sunypoly.edu/academics/online-learning/Online-and-Hybrid-Course-Descriptions.html):
+
+> Online course are fully online and are asynchronous and have no meeting time (remotely or in-person). The activities must be completed by the due dates specified by your instructor. Online courses may also have proctored exams. Students will be required to locate their own proctors for the exams. 
+
+> Depending on the instructor/department, the course may also use webinars to provide office hours, study sessions, presentations, group projects and recorded sessions. Contact the instructor or department for more information. The section number of online synchronous courses end with a "W"
+
+Notice there are no meeting times.  If you want to meet by video I will try and set office hours to meet with students, but there is absolutely no guarantee we will be able to meet.  If you request a new video on a topic I can usually create one in a timely manner.
+
+If you *need* to meet with me to take this course however, you should drop the 35W offering and sign up for a in-person or 35S or H offering of FIN 332.  One is guaranteed to be offered every other year.   
+
 ## General Notes (most relate only to in class sections)
 
 #. The instructor is not involved in any way with your adding and dropping the course.  It is the student's responsibility to abide by all proper procedures and dates.
