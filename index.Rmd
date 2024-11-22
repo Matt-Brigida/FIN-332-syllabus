@@ -193,7 +193,7 @@ First, choose a stock whose ticker starts with the same letter that your last na
 
 1.  Value an option on the stock using the Black-Scholes (1973) option pricing model.
 2.  Calculate the stock's historical annualized volatility, and get an estimate of the implied volatility. To do so the you must show it is able to download a recent time series of the underlying stock price, convert these prices into a time series of returns, calculate the standard deviation of the returns, and then annualize the standard deviation (this is the stock annualized volatility which is a parameter in the option pricing model).
-3.  Calculate the value of the option by Monte Carlo.
+3.  [Calculate the value of the option by Monte Carlo.](https://www.youtube.com/watch?v=vLCXAKzaW5A).  [Background on the valuation.](https://www.youtube.com/watch?v=HOSf-lk9JOw)
 4.  Calculate the proportion of your stock's return variance which is from the market and which is due to firm specific uncertainty.
 <!-- 4.  Calculate the Greeks. -->
 
