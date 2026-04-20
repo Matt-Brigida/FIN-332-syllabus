@@ -1,6 +1,6 @@
 ---
 title: 
-date: "August 1, 2024"
+##date: "August 1, 2024"
 ## output: pdf_document
 ## always_allow_html: true
 output: 
@@ -51,7 +51,7 @@ opts_knit$set(width=75)
 
 **Optional Text**: [*Investments* by Bodie, Kane, and Marcus, 8th edition (or later), ISBN: 0077261453](http://www.amazon.com/Investments-8th-Edition-Zvi-Bodie/dp/0077261453/ref=sr_1_5?ie=UTF8&qid=1407685749&sr=8-5&keywords=investment+bodie+kane+marcus)
 
-Strictly speaking, the *Investments* text is optional.  That said, I highly recommend you pick up some edition of the text.  You can often find a used copy online for less than $10, and in this case it is well worth the money.
+The *Investments* text is optional, and all the material is available with appropriate prompts to an LLM.  That said, I recommend you pick up some edition of the text.  You can often find a used copy online for less than $10, and in this case it is well worth the money.
 
 **Supplementary/Optional Materials**: 
 
@@ -59,13 +59,13 @@ Strictly speaking, the *Investments* text is optional.  That said, I highly reco
 -  [Financial Education](https://financial-education.github.io/investments.html)
 -  [39 Arbitrages](https://www.amazon.com/39-Arbitrages-Matthew-Brigida-Ph-D-ebook/dp/B08MWYN5D4/ref=sr_1_1?dchild=1&keywords=39+arbitrages&qid=1614011029&sr=8-1&tag=duckduckgo-20)
 
-## Video Walkthrough of Syllabus
+<!-- ## Video Walkthrough of Syllabus -->
 
-```{r}
-library(vembedr)
-# use _suggest_embed() with the video's link
-embed_youtube("4nHWC1Oeqt0")
-```
+<!-- ```{r} -->
+<!-- library(vembedr) -->
+<!-- # use _suggest_embed() with the video's link -->
+<!-- embed_youtube("4nHWC1Oeqt0") -->
+<!-- ``` -->
 
 ## Description
 
@@ -132,9 +132,9 @@ cat(tabl)
 ```
 </center>
 
-## Exams
+<!-- ## Exams -->
 
-There will be three exams (two during the semester and a final exam). Normally no make-up exams will be given.  Failure to take an exam will result in a grade of zero for the missed exam.  Make-up exams will only be allowed for *extraordinary* and *verifiable* reasons.
+<!-- There will be one final exam. Normally no make-up exams will be given.  Failure to take an exam will result in a grade of zero for the missed exam.  Make-up exams will only be allowed for *extraordinary* and *verifiable* reasons. -->
 
 <!---
 \begin{center}
@@ -148,31 +148,30 @@ accepted.
 %
 -->
 
-## Trading/Other Assignments
+## Project 1: Trading Assignments
 
 Trading assignments are here: https://github.com/Matt-Brigida/fin-332-trading-assignments  Students will complete each of these during the semester.  **If you do not make the trades you will receive a 0 for the assignment even if you attempt to answer some of the questions**.  
 
 *Market Trading Hours*: The stock and option markets are open from 9:30 am to 4pm each non-holiday weekday.  Therefore, you must make your trades within these times.
 
-I may assign other several homeworks throughout the semester that involve either trading in your brokerage accounts, or downloading data in R and performing some calculation/analyses. If I give pop quizzes, these grades will be included here. 
+<!-- I may assign other several homeworks throughout the semester that involve either trading in your brokerage accounts, or downloading data in R and performing some calculation/analyses. If I give pop quizzes, these grades will be included here.  -->
 
-Here is a video on the first 3 trading assignments:
+Here is a video on the first 3 trading assignments: https://www.youtube.com/watch?v=uG7l0WaATDs
 
-```{r}
+```{r eval=FALSE}
 # suggest_embed("https://www.youtube.com/watch?v=uG7l0WaATDs")
 embed_youtube("uG7l0WaATDs")
 ```
 
-And a video on shorting stock:
+And a video on shorting stock: https://www.youtube.com/watch?v=bTP19kqiKEk
 
-```{r}
+```{r eval=FALSE}
 # suggest_embed("https://www.youtube.com/watch?v=bTP19kqiKEk")
 embed_youtube("bTP19kqiKEk")
 ```
 
 
-
-## Brokerage Accounts
+### Brokerage Accounts
 
 We will use paper trading accounts provided by Interactive Brokers. These
 trading accounts are the exact same as the actual brokerage accounts---except the money isn’t real.
@@ -187,7 +186,63 @@ See [**here**](#brti) example of the data we can pull using our IB accounts.  Yo
 
 [Also check out the IB Quant Blog.  It is a very good resource.](https://www.ibkr.com/quant)
 
-## Required Black-Scholes Project
+## Project 2: Earnings Announcement Event Study
+
+Each student will complete an event study on a U.S. common stock whose ticker begins with the same first letter as the student’s last name. The event is the company’s most recent earnings announcement **on or before [insert cutoff date]**. If no suitable NYSE- or Nasdaq-listed common stock is available for that letter, the student should use the next letter in the last name. If that also fails, the student should contact the instructor for an approved fallback ticker. ETFs, mutual funds, ADRs, preferred shares, and OTC stocks may not be used.
+
+The purpose of the project is to measure how the stock reacted to its most recent earnings news. Students must identify the earnings announcement date using the company’s investor relations page, earnings press release, or SEC filing. The event date is defined as the **first trading day on which the market could react to the earnings news**. If the earnings release was issued **before the market opened**, that trading day is day 0. If the earnings release was issued **after the market closed**, the next trading day is day 0.
+
+Students will use **daily adjusted closing prices** for both the stock and the market benchmark, **SPY**, to compute returns. Daily stock return is:
+
+$$
+R_{i,t} = \frac{P_{i,t}}{P_{i,t-1}} - 1
+$$
+
+and daily market return is:
+
+$$
+R_{m,t} = \frac{P_{m,t}}{P_{m,t-1}} - 1
+$$
+
+where $P_{i,t}$ is the adjusted close for the stock on day $t$, and $P_{m,t}$ is the adjusted close for SPY on day $t$.
+
+Students will calculate **abnormal return** for each day in the event window using the market-adjusted model:
+
+$$
+AR_t = R_{i,t} - R_{m,t}
+$$
+
+The required event window is **[-1, +1]**, where:
+
+- **-1** = the trading day before the event
+- **0** = the event day
+- **+1** = the trading day after the event
+
+Students must calculate:
+
+1. the stock’s return on day -1, day 0, and day +1  
+2. SPY’s return on day -1, day 0, and day +1  
+3. abnormal return on day -1, day 0, and day +1  
+4. the cumulative abnormal return over the three-day window:
+
+$$
+CAR[-1,+1] = AR_{-1} + AR_0 + AR_{+1}
+$$
+
+Each student must submit:
+
+1. a spreadsheet showing all calculations  
+2. the source for the earnings announcement date  
+3. a chart showing either the three abnormal returns or the cumulative abnormal return over the event window  
+4. short responses to the following questions:
+   - Was the market reaction to the earnings announcement positive or negative?
+   - Was most of the reaction concentrated on day 0, or did it spill over to day -1 or day +1?
+   - Does the result appear consistent with semi-strong-form market efficiency?
+
+A successful project will correctly identify the event date, correctly compute stock returns, market returns, abnormal returns, and $CAR[-1,+1]$, and provide a brief interpretation of the market’s reaction to the earnings announcement.
+
+
+## Project 3: Black-Scholes Project
 
 First, choose a stock whose ticker starts with the same letter that your last name starts with.  For example, since my last name is Brigida I may choose Boeing (ticker BA).  Once you have chosen your stock create a spreadsheet which will:
 
@@ -215,48 +270,135 @@ $(\beta_s)^2 Var(r_m)$ is the market's contribution to your stock's variance, an
 
 $Var(e_s)$  is the firm specific contribution.
 
-## Optional Web App Project
 
-**Optional Projects are only for students doing well in the course.  They should not be used to attempt to increase your grade.**
+## Project 4: Portfolio Construction and CAPM Analysis
 
-Students will create a Shiny interactive web application.  To do so you'll first need to sign up for a free [shinyapps](https://www.shinyapps.io/) account.
+Each student will construct and evaluate a portfolio of common stocks. The purpose of the project is to measure how diversification affects risk and return, and to relate the portfolio’s expected return to its systematic risk.
 
-You are free to create the account under a pseudonym, so no one can publicly identify you as the owner of the account.  However, the web application is a useful tool to show off your work, and is something that can go on your resume (with a link to the application).  So you may prefer to use your real name.  My user name is `mattbrigida`.
+Each student will choose **four U.S. common stocks**. At least **three different sectors** must be represented in the portfolio. ETFs, mutual funds, ADRs, preferred shares, and OTC stocks may not be used.
 
-Your application should have something to do with financial markets, and should be at least somewhat original.  See this [gallery of applications](http://shiny.rstudio.com/). Possible applications may be:
+Students will use **daily adjusted closing prices** over the sample period **[insert start date]** through **[insert end date]**. Students will also use **SPY** as the market benchmark and the **3-month Treasury bill rate** as the risk-free rate.
 
-- Plot a time series of stock prices, returns, or volatility.
-- **Financial Advisers:**  Create an app which will return target asset allocation given a person's age and investing goals/risk tolerance.
-- Create and plot a stock index.
-- A Black-Scholes calculator.
-- A margin calculator.
-- Create a histogram or probability density plot for bond or stock returns.
+Students must first calculate daily returns for each stock and for SPY:
 
-To get started you will want to use the RStudio development environment for R.  This is available in the Still hall computer lab, or you can install it for free on your own computer [from here](https://www.rstudio.com/products/rstudio/download/).  If you install it on your own computer you'll need to install R first.  You can get [R here](https://cran.r-project.org/)
+$$
+R_{i,t} = \frac{P_{i,t}}{P_{i,t-1}} - 1
+$$
 
-## Optional Pairs Trade
+where $P_{i,t}$ is the adjusted closing price of asset $i$ on day $t$.
 
-Implement the pairs trade methodology outlined in Gatev et. al (2006).
+Students will then form an **equally weighted portfolio**, so that each of the four stocks has a portfolio weight of:
 
-@Article{Gatev_2006,
-  author       = {Gatev, Evan and Goetzmann, William N. and
-                  Rouwenhorst, K. Geert},
-  title	       = {Pairs Trading: Performance of a Relative-Value
-                  Arbitrage Rule},
-  year	       = 2006,
-  volume       = 19,
-  number       = 3,
-  pages	       = {797–827},
-  issn	       = {1465-7368},
-  doi	       = {10.1093/rfs/hhj020},
-  url	       = {http://dx.doi.org/10.1093/rfs/hhj020},
-  journal      = {Review of Financial Studies},
-  publisher    = {Oxford University Press (OUP)}
-}
+$$
+w_i = 0.25
+$$
 
-## Optional Optimal Portfolio
+The daily return on the portfolio is:
 
-Construct a Markowitz Mean-Variance Optimal portfolio.
+$$
+R_{p,t} = \sum_{i=1}^{4} w_i R_{i,t}
+$$
+
+Students must calculate the following for the portfolio:
+
+1. average daily return  
+2. annualized average return  
+3. daily standard deviation  
+4. annualized standard deviation  
+
+Annualized return should be calculated as:
+
+$$
+\bar{R}_{p,ann} = 252 \times \bar{R}_{p,daily}
+$$
+
+Annualized standard deviation should be calculated as:
+
+$$
+\sigma_{p,ann} = \sqrt{252}\,\sigma_{p,daily}
+$$
+
+Students must then estimate the portfolio’s beta by running the following regression:
+
+$$
+R_{p,t} - R_{f,t} = \alpha_p + \beta_p (R_{m,t} - R_{f,t}) + e_t
+$$
+
+where $R_{p,t}$ is the portfolio return, $R_{m,t}$ is the return on SPY, and $R_{f,t}$ is the daily risk-free rate implied by the 3-month Treasury bill rate.
+
+Using the estimated beta, students must calculate the portfolio’s CAPM expected return:
+
+$$
+E(R_p) = R_f + \beta_p \left(E(R_m) - R_f\right)
+$$
+
+Students must compare the portfolio’s realized annualized return to its CAPM expected return and briefly discuss whether the portfolio outperformed or underperformed what CAPM would predict.
+
+Students must also calculate the Sharpe ratio of the portfolio:
+
+$$
+Sharpe = \frac{\bar{R}_p - R_f}{\sigma_p}
+$$
+
+Each student must submit:
+
+1. a spreadsheet showing all calculations  
+2. a table with the four stocks and their sectors  
+3. the portfolio’s annualized return, annualized standard deviation, beta, CAPM expected return, and Sharpe ratio  
+4. one chart comparing the cumulative return of the portfolio to SPY over the sample period  
+5. short responses to the following questions:
+   - Did diversification reduce risk relative to the individual stocks?
+   - Was the portfolio’s realized return above or below its CAPM expected return?
+   - Would you consider this a strong portfolio for a passive investor? Why or why not?
+
+A successful project will correctly calculate portfolio returns, annualized risk and return, beta, CAPM expected return, and the Sharpe ratio, and will provide a brief interpretation of the portfolio’s performance.
+
+## Exam
+
+There will be one multiple-choice exam covering important Investments topics.  The exam will be posted early in the course, and you will have until the due date to submit the exam.  If you do not submit the exam by the due date you will receive a 0.  Because you have over a month to take the exam, I won't allow late submissions for any reason.
+
+<!-- ## Optional Web App Project -->
+
+<!-- **Optional Projects are only for students doing well in the course.  They should not be used to attempt to increase your grade.** -->
+
+<!-- Students will create a Shiny interactive web application.  To do so you'll first need to sign up for a free [shinyapps](https://www.shinyapps.io/) account. -->
+
+<!-- You are free to create the account under a pseudonym, so no one can publicly identify you as the owner of the account.  However, the web application is a useful tool to show off your work, and is something that can go on your resume (with a link to the application).  So you may prefer to use your real name.  My user name is `mattbrigida`. -->
+
+<!-- Your application should have something to do with financial markets, and should be at least somewhat original.  See this [gallery of applications](http://shiny.rstudio.com/). Possible applications may be: -->
+
+<!-- - Plot a time series of stock prices, returns, or volatility. -->
+<!-- - **Financial Advisers:**  Create an app which will return target asset allocation given a person's age and investing goals/risk tolerance. -->
+<!-- - Create and plot a stock index. -->
+<!-- - A Black-Scholes calculator. -->
+<!-- - A margin calculator. -->
+<!-- - Create a histogram or probability density plot for bond or stock returns. -->
+
+<!-- To get started you will want to use the RStudio development environment for R.  This is available in the Still hall computer lab, or you can install it for free on your own computer [from here](https://www.rstudio.com/products/rstudio/download/).  If you install it on your own computer you'll need to install R first.  You can get [R here](https://cran.r-project.org/) -->
+
+<!-- ## Optional Pairs Trade -->
+
+<!-- Implement the pairs trade methodology outlined in Gatev et. al (2006). -->
+
+<!-- @Article{Gatev_2006, -->
+<!--   author       = {Gatev, Evan and Goetzmann, William N. and -->
+<!--                   Rouwenhorst, K. Geert}, -->
+<!--   title	       = {Pairs Trading: Performance of a Relative-Value -->
+<!--                   Arbitrage Rule}, -->
+<!--   year	       = 2006, -->
+<!--   volume       = 19, -->
+<!--   number       = 3, -->
+<!--   pages	       = {797–827}, -->
+<!--   issn	       = {1465-7368}, -->
+<!--   doi	       = {10.1093/rfs/hhj020}, -->
+<!--   url	       = {http://dx.doi.org/10.1093/rfs/hhj020}, -->
+<!--   journal      = {Review of Financial Studies}, -->
+<!--   publisher    = {Oxford University Press (OUP)} -->
+<!-- } -->
+
+<!-- ## Optional Optimal Portfolio -->
+
+<!-- Construct a Markowitz Mean-Variance Optimal portfolio. -->
 
 ## Course Communication
 
@@ -282,11 +424,11 @@ I normally do not regrade assignments, however if I do so your grade may increas
 tabl <- "
 | Item | Points |
 | ---- | ------ |
-| Exam 1 |  20 |
-| Exam 2 |  20 |
+| Project 1 |  20 |
+| Project 2 |  20 |
+| Project 3 |  20 |
+| Project 4 |  20 |
 | Final Exam |  20 |
-| Trading Assignments/Other | 20 |
-| Black Scholes (or Web App) | 20 |
 | Total Points | 100 |
 "
 cat(tabl)
@@ -332,23 +474,18 @@ Notice there are no meeting times.  If you want to meet by video I will try and 
 
 If you *need* to meet with me to take this course however, you should drop the 35W offering and sign up for a in-person or 35S or H offering of FIN 332.  One is guaranteed to be offered every other year.   
 
-## General Notes (most relate only to in class sections)
 
-#. The instructor is not involved in any way with your adding and dropping the course.  It is the student's responsibility to abide by all proper procedures and dates.
-#. Attending class, and reading the text is required.
-#. All exams will be closed book.
-#. If you are late for an exam, no extra time will be allotted to you.
-#. There will be no make up exams or extra points assignments.
-#. You will be responsible for any material covered in class that is not in your text.
-#. You should bring your text to class.
-#. You are expected to be on time for class. This is especially important for exam
-dates.
-#. Disruptive behavior in the classroom will not be tolerated.
-#. You may not use tobacco products in class.
+## Due Dates
 
-## Tentative Outline
+- Project 1: 
+- Project 2: 
+- Project 3: 
+- Project 4: 
+- Final Exam:
 
-**All due dates are in the ouline below.  There are no due dates listed in D2L.**
+<!-- ## Tentative Outline -->
+
+<!-- **All due dates are in the ouline below.  There are no due dates listed in D2L.** -->
 
 <!-- - 8/27: Chapter 1 -->
 <!-- - 9/3:  Chapter 2 \& 3 -->
@@ -381,21 +518,21 @@ dates.
 <!-- - 4/20: Chapter 23 -->
 <!-- - 4/27: Trading, exam review, **and the last day to present your projects.** -->
 
-- Week 1: Chapter 1
-- Week 2: Chapter 2 \& 3
-- Week 3:  Chapter 3 \& 4
-- Week 4:  Review and Market Microstructure (*The Only Game in Town* and Payment for Order Flow)
-- Week 5:  <span style="color:red">**Exam 1 Due, September 27** | **Trading Assignments 1, 2 and 3 are also due September 27**</span>
-- Week 6:  Chapter 20: Options and Option Markets, 20.1--20.3
-- Week 7:  Chapter 20: Options and Option Markets, 20.4--20.7
-- Week 8:  Chapter 21: Options and Option Markets, 21.1--21.3
-- Week 9:  Chapter 21: Options and Option Markets, 21.4--21.6
-- Week 10: <span style="color:red">**Exam 2 Due, November 8** | **Trading Assignments 4 and 5 are also due November 8**</span>
-- Week 11: Chapter 22: Futures, 22.1--22.2
-- Week 12: Chapter 22: Futures, 22.3--22.4
-- Week 13: Chapter 22: Futures, 22.5 and possibly a topic from Chapter 23
-- Week 14:  Trading, exam review, <span style="color:red">**Black-Scholes project Due December 3.** | **Trading Assignments 6 and 7 are also due December 3**</span>
-- <span style="color:red">**Final Exam Due: Date TBA**</span>
+<!-- - Week 1: Chapter 1 -->
+<!-- - Week 2: Chapter 2 \& 3 -->
+<!-- - Week 3:  Chapter 3 \& 4 -->
+<!-- - Week 4:  Review and Market Microstructure (*The Only Game in Town* and Payment for Order Flow) -->
+<!-- - Week 5:  <span style="color:red">**Exam 1 Due, September 27** | **Trading Assignments 1, 2 and 3 are also due September 27**</span> -->
+<!-- - Week 6:  Chapter 20: Options and Option Markets, 20.1--20.3 -->
+<!-- - Week 7:  Chapter 20: Options and Option Markets, 20.4--20.7 -->
+<!-- - Week 8:  Chapter 21: Options and Option Markets, 21.1--21.3 -->
+<!-- - Week 9:  Chapter 21: Options and Option Markets, 21.4--21.6 -->
+<!-- - Week 10: <span style="color:red">**Exam 2 Due, November 8** | **Trading Assignments 4 and 5 are also due November 8**</span> -->
+<!-- - Week 11: Chapter 22: Futures, 22.1--22.2 -->
+<!-- - Week 12: Chapter 22: Futures, 22.3--22.4 -->
+<!-- - Week 13: Chapter 22: Futures, 22.5 and possibly a topic from Chapter 23 -->
+<!-- - Week 14:  Trading, exam review, <span style="color:red">**Black-Scholes project Due December 3.** | **Trading Assignments 6 and 7 are also due December 3**</span> -->
+<!-- - <span style="color:red">**Final Exam Due: Date TBA**</span> -->
 
 ## BRTI Tick Data {#brti}
 
@@ -420,8 +557,21 @@ dygraph(book['2018-01-03 09:30:00/2018-01-03 16:00:00'])
 
 >For information related to these services or to schedule an appointment, please contact the Office of Disability Services using the information provided below.  The Office of Disability Services can accommodate virtual meeting requests.  The website has helpful information, and the link can be found here: https://sunypoly.edu/student-life/diversity-equity-inclusion/disabilities-services/contact-us.html
 
-## Answers to Online Questions
+<!-- ## Answers to Online Questions -->
 
-[On momentum trading strategies such as the post-earnings announcement drift anomaly.](https://www.youtube.com/watch?v=1sOqYRdnP_g&lc=Ugx7asEE_5LfM1d8DiN4AaABAg.8w_Di74z1tC8w__IIMlWOa)
+<!-- [On momentum trading strategies such as the post-earnings announcement drift anomaly.](https://www.youtube.com/watch?v=1sOqYRdnP_g&lc=Ugx7asEE_5LfM1d8DiN4AaABAg.8w_Di74z1tC8w__IIMlWOa) -->
 
-[The CAPM does not assume all investors have the same degree of risk aversion](https://quant.stackexchange.com/a/46297/17448)
+<!-- [The CAPM does not assume all investors have the same degree of risk aversion](https://quant.stackexchange.com/a/46297/17448) -->
+
+## General Notes (most relate only to in class sections)
+
+#. The instructor is not involved in any way with your adding and dropping the course.  It is the student's responsibility to abide by all proper procedures and dates.
+#. Attending class, and reading the text is required.
+#. All exams will be closed book.
+#. If you are late for an exam, no extra time will be allotted to you.
+#. There will be no make up exams or extra points assignments.
+#. You will be responsible for any material covered in class that is not in your text.
+#. You should bring your text to class.
+#. You are expected to be on time for class. This is especially important for exam
+dates.
+#. Disruptive behavior in the classroom will not be tolerated.
