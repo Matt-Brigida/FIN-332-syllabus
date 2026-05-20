@@ -188,7 +188,7 @@ See [**here**](#brti) example of the data we can pull using our IB accounts.  Yo
 
 ## Project 2: Earnings Announcement Event Study
 
-Each student will complete an event study on a U.S. common stock whose ticker begins with the same first letter as the student’s last name. The event is the company’s most recent earnings announcement **on or before [insert cutoff date]**. If no suitable NYSE- or Nasdaq-listed common stock is available for that letter, the student should use the next letter in the last name. If that also fails, the student should contact the instructor for an approved fallback ticker. ETFs, mutual funds, ADRs, preferred shares, and OTC stocks may not be used.
+Each student will complete an event study on a U.S. common stock whose ticker begins with the same first letter as the student’s last name. The event is the company’s most recent earnings announcement prior to the start of the semester. If no suitable NYSE- or Nasdaq-listed common stock is available for that letter, the student should use the next letter in the last name. If that also fails, the student should contact the instructor for an approved fallback ticker. ETFs, mutual funds, ADRs, preferred shares, and OTC stocks may not be used.
 
 The purpose of the project is to measure how the stock reacted to its most recent earnings news. Students must identify the earnings announcement date using the company’s investor relations page, earnings press release, or SEC filing. The event date is defined as the **first trading day on which the market could react to the earnings news**. If the earnings release was issued **before the market opened**, that trading day is day 0. If the earnings release was issued **after the market closed**, the next trading day is day 0.
 
@@ -277,7 +277,7 @@ Each student will construct and evaluate a portfolio of common stocks. The purpo
 
 Each student will choose **four U.S. common stocks**. At least **three different sectors** must be represented in the portfolio. ETFs, mutual funds, ADRs, preferred shares, and OTC stocks may not be used.
 
-Students will use **daily adjusted closing prices** over the sample period **[insert start date]** through **[insert end date]**. Students will also use **SPY** as the market benchmark and the **3-month Treasury bill rate** as the risk-free rate.
+Students will use **daily adjusted closing prices** over the sample period January 1st 2026 through April 30 2026. Students will also use **SPY** as the market benchmark and the **3-month Treasury bill rate** as the risk-free rate.
 
 Students must first calculate daily returns for each stock and for SPY:
 
