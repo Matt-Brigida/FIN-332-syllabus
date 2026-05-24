@@ -6911,48 +6911,138 @@ correctly compute stock returns, market returns, abnormal returns, and
 <span class="math inline">\(CAR[-1,+1]\)</span>, and provide a brief
 interpretation of the market’s reaction to the earnings
 announcement.</p>
+<!--
+## Project 3: Black-Scholes Project
+
+First, choose a stock whose ticker starts with the same letter that your last name starts with.  For example, since my last name is Brigida I may choose Boeing (ticker BA).  Once you have chosen your stock create a spreadsheet which will:
+
+1.  Value an option on the stock using the Black-Scholes (1973) option pricing model.
+2.  Calculate the stock's historical annualized volatility, and get an estimate of the implied volatility. To do so the you must show it is able to download a recent time series of the underlying stock price, convert these prices into a time series of returns, calculate the standard deviation of the returns, and then annualize the standard deviation (this is the stock annualized volatility which is a parameter in the option pricing model).
+3.  [Calculate the value of the option by Monte Carlo.](https://www.youtube.com/watch?v=vLCXAKzaW5A).  [Background on the valuation.](https://www.youtube.com/watch?v=HOSf-lk9JOw)
+4.  Calculate the proportion of your stock's return variance which is from the market and which is due to firm specific uncertainty.
+
+You should be ready to explain any part of the spreadsheet.  For 4. consider the following regression:
+
+$r_s = \alpha + \beta_s r_m + e_s$
+
+where $r_s$ are returns on your stock and $r_m$ are market returns.  Then:
+
+$Var(r_s) = (\beta_s)^2 Var(r_m) + Var(e_s)$
+
+because:
+
+$Cov(r_m, e_s) = 0$
+
+Note, $Var(X)$ denotes the variance of $X$, and is also often written as $\sigma^2_X$.
+
+$(\beta_s)^2 Var(r_m)$ is the market's contribution to your stock's variance, and:
+
+$Var(e_s)$  is the firm specific contribution.
+-->
 </div>
-<div id="project-3-black-scholes-project" class="section level2">
-<h2>Project 3: Black-Scholes Project</h2>
-<p>First, choose a stock whose ticker starts with the same letter that
-your last name starts with. For example, since my last name is Brigida I
-may choose Boeing (ticker BA). Once you have chosen your stock create a
-spreadsheet which will:</p>
+<div id="project-3-currency-markets-and-multinational-hedging" class="section level2">
+<h2>Project 3: Currency Markets and Multinational Hedging</h2>
+<p>Multinational corporations routinely face two intertwined risks:
+exchange rate movements and interest rate differentials across
+countries. This project asks you to explore both risks using real market
+data and the theoretical framework of Interest Rate Parity (IRP).</p>
+<div id="part-1-interest-rate-parity" class="section level3">
+<h3>Part 1: Interest Rate Parity</h3>
+<p>Interest Rate Parity is a no-arbitrage condition linking spot
+exchange rates, forward exchange rates, and interest rates in two
+countries. The <strong>Covered Interest Rate Parity (CIP)</strong>
+condition states:</p>
+<p><span class="math display">\[
+F = S \times \frac{1 + r_d}{1 + r_f}
+\]</span></p>
+<p>where <span class="math inline">\(S\)</span> is the current spot
+exchange rate (domestic currency per unit of foreign currency), <span class="math inline">\(F\)</span> is the forward exchange rate for the
+same maturity, <span class="math inline">\(r_d\)</span> is the domestic
+interest rate, and <span class="math inline">\(r_f\)</span> is the
+foreign interest rate.</p>
+<p>Select a currency pair of your choice (e.g., USD/EUR, USD/GBP,
+USD/JPY). Using current market data:</p>
 <ol style="list-style-type: decimal">
-<li>Value an option on the stock using the Black-Scholes (1973) option
-pricing model.</li>
-<li>Calculate the stock’s historical annualized volatility, and get an
-estimate of the implied volatility. To do so the you must show it is
-able to download a recent time series of the underlying stock price,
-convert these prices into a time series of returns, calculate the
-standard deviation of the returns, and then annualize the standard
-deviation (this is the stock annualized volatility which is a parameter
-in the option pricing model).</li>
-<li><a href="https://www.youtube.com/watch?v=vLCXAKzaW5A">Calculate the
-value of the option by Monte Carlo.</a>. <a href="https://www.youtube.com/watch?v=HOSf-lk9JOw">Background on the
-valuation.</a></li>
-<li>Calculate the proportion of your stock’s return variance which is
-from the market and which is due to firm specific uncertainty.
-<!-- 4.  Calculate the Greeks. --></li>
+<li>Look up the current <strong>spot exchange rate</strong> for your
+currency pair.</li>
+<li>Look up a <strong>short-term interest rate</strong> (e.g., 3-month
+government bill yield or interbank rate) for each of the two
+countries.</li>
+<li>Compute the <strong>CIP-implied forward rate</strong> using the
+formula above.</li>
+<li>Look up the actual <strong>3-month forward rate</strong> quoted in
+the market (forward rates are widely published for major currency
+pairs).</li>
+<li>Compare your CIP-implied forward rate to the market forward rate.
+Are they close? If there is a discrepancy, discuss whether a covered
+interest arbitrage profit would theoretically be available, and why such
+deviations are rare in practice for major currency pairs.</li>
 </ol>
-<p>You should be ready to explain any part of the spreadsheet. For 4.
-consider the following regression:</p>
-<p><span class="math inline">\(r_s = \alpha + \beta_s r_m +
-e_s\)</span></p>
-<p>where <span class="math inline">\(r_s\)</span> are returns on your
-stock and <span class="math inline">\(r_m\)</span> are market returns.
-Then:</p>
-<p><span class="math inline">\(Var(r_s) = (\beta_s)^2 Var(r_m) +
-Var(e_s)\)</span></p>
-<p>because:</p>
-<p><span class="math inline">\(Cov(r_m, e_s) = 0\)</span></p>
-<p>Note, <span class="math inline">\(Var(X)\)</span> denotes the
-variance of <span class="math inline">\(X\)</span>, and is also often
-written as <span class="math inline">\(\sigma^2_X\)</span>.</p>
-<p><span class="math inline">\((\beta_s)^2 Var(r_m)\)</span> is the
-market’s contribution to your stock’s variance, and:</p>
-<p><span class="math inline">\(Var(e_s)\)</span> is the firm specific
-contribution.</p>
+</div>
+<div id="part-2-hedging-a-foreign-currency-cash-flow" class="section level3">
+<h3>Part 2: Hedging a Foreign Currency Cash Flow</h3>
+<p>Suppose a U.S.-based multinational expects to receive a payment in
+the foreign currency you selected — specifically, an amount equal to
+<strong>1,000,000 units</strong> of the foreign currency — in exactly 90
+days. The firm is concerned that the foreign currency will depreciate
+against the USD before payment is received, reducing the dollar value of
+the receipt.</p>
+<p>Demonstrate how the firm can <strong>lock in a dollar value
+today</strong> using a forward contract:</p>
+<ol style="list-style-type: decimal">
+<li>Calculate the <strong>unhedged dollar receipt</strong> if the spot
+rate in 90 days equals today’s spot rate (i.e., no change).</li>
+<li>Calculate the <strong>hedged dollar receipt</strong> by applying the
+3-month forward rate you looked up in Part 1.</li>
+<li>Construct a simple scenario table showing the hedged vs. unhedged
+dollar receipt if the spot rate in 90 days is (a) 5% higher than today,
+(b) unchanged, and (c) 5% lower than today. In each scenario, compute
+the <strong>gain or loss from hedging</strong> relative to leaving the
+position unhedged.</li>
+</ol>
+</div>
+<div id="part-3-interest-rate-risk-for-a-multinational-borrower" class="section level3">
+<h3>Part 3: Interest Rate Risk for a Multinational Borrower</h3>
+<p>Now consider the same multinational firm, which needs to borrow funds
+in the foreign currency. Suppose it borrows <strong>1,000,000
+units</strong> of the foreign currency at a <strong>floating interest
+rate</strong> tied to a benchmark (such as EURIBOR or SONIA, depending
+on your currency pair). The firm is worried that foreign interest rates
+will rise before the next rate reset.</p>
+<ol style="list-style-type: decimal">
+<li>Briefly explain in your own words why a rise in the foreign
+benchmark rate increases the firm’s borrowing cost and how this
+interacts with the exchange rate risk already present in Part 2.</li>
+<li>Describe (without necessarily pricing it) how an <strong>interest
+rate swap</strong> or a <strong>cross-currency swap</strong> could help
+the firm convert its floating-rate foreign-currency liability into a
+fixed-rate USD liability, thereby hedging both interest rate risk and
+currency risk simultaneously.</li>
+<li>Using the interest rates from Part 1, calculate the firm’s
+<strong>all-in annual interest cost</strong> (in USD terms) under the
+hedged position: assume the firm borrows at the foreign rate <span class="math inline">\(r_f\)</span>, converts the proceeds at the spot
+rate, and has locked in repayment of the principal at the forward rate.
+Compare this to simply borrowing at the domestic rate <span class="math inline">\(r_d\)</span>. Is the result consistent with CIP?
+Explain why or why not.</li>
+</ol>
+</div>
+<div id="submission-requirements" class="section level3">
+<h3>Submission Requirements</h3>
+<p>Each student must submit:</p>
+<ol style="list-style-type: decimal">
+<li>A spreadsheet showing all data, calculations, and the scenario table
+from Part 2.</li>
+<li>The sources for all market data (spot rate, forward rate, and
+interest rates), including the date on which the data were
+retrieved.</li>
+<li>Short written responses (a few sentences each) to the discussion
+questions in Parts 1 and 3.</li>
+</ol>
+<p>A successful project will correctly apply the CIP formula, correctly
+compute hedged and unhedged cash flows across scenarios, and provide a
+clear explanation of how forward contracts and swaps mitigate currency
+and interest rate risk for a multinational firm.</p>
+</div>
 </div>
 <div id="project-4-portfolio-construction-and-capm-analysis" class="section level2">
 <h2>Project 4: Portfolio Construction and CAPM Analysis</h2>
@@ -7376,8 +7466,8 @@ important for exam dates.</li>
        Assignments</a></li>
        <li><a href="#project-2-earnings-announcement-event-study" id="toc-project-2-earnings-announcement-event-study">Project 2:
        Earnings Announcement Event Study</a></li>
-       <li><a href="#project-3-black-scholes-project" id="toc-project-3-black-scholes-project">Project 3: Black-Scholes
-       Project</a></li>
+       <li><a href="#project-3-currency-markets-and-multinational-hedging" id="toc-project-3-currency-markets-and-multinational-hedging">Project
+       3: Currency Markets and Multinational Hedging</a></li>
        <li><a href="#project-4-portfolio-construction-and-capm-analysis" id="toc-project-4-portfolio-construction-and-capm-analysis">Project
        4: Portfolio Construction and CAPM Analysis</a></li>
        <li><a href="#exam" id="toc-exam">Exam</a></li>

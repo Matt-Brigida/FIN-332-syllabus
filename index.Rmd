@@ -242,6 +242,7 @@ Each student must submit:
 A successful project will correctly identify the event date, correctly compute stock returns, market returns, abnormal returns, and $CAR[-1,+1]$, and provide a brief interpretation of the market’s reaction to the earnings announcement.
 
 
+<!--
 ## Project 3: Black-Scholes Project
 
 First, choose a stock whose ticker starts with the same letter that your last name starts with.  For example, since my last name is Brigida I may choose Boeing (ticker BA).  Once you have chosen your stock create a spreadsheet which will:
@@ -250,7 +251,6 @@ First, choose a stock whose ticker starts with the same letter that your last na
 2.  Calculate the stock's historical annualized volatility, and get an estimate of the implied volatility. To do so the you must show it is able to download a recent time series of the underlying stock price, convert these prices into a time series of returns, calculate the standard deviation of the returns, and then annualize the standard deviation (this is the stock annualized volatility which is a parameter in the option pricing model).
 3.  [Calculate the value of the option by Monte Carlo.](https://www.youtube.com/watch?v=vLCXAKzaW5A).  [Background on the valuation.](https://www.youtube.com/watch?v=HOSf-lk9JOw)
 4.  Calculate the proportion of your stock's return variance which is from the market and which is due to firm specific uncertainty.
-<!-- 4.  Calculate the Greeks. -->
 
 You should be ready to explain any part of the spreadsheet.  For 4. consider the following regression:
 
@@ -269,6 +269,57 @@ Note, $Var(X)$ denotes the variance of $X$, and is also often written as $\sigma
 $(\beta_s)^2 Var(r_m)$ is the market's contribution to your stock's variance, and:
 
 $Var(e_s)$  is the firm specific contribution.
+-->
+
+## Project 3: Currency Markets and Multinational Hedging
+
+Multinational corporations routinely face two intertwined risks: exchange rate movements and interest rate differentials across countries. This project asks you to explore both risks using real market data and the theoretical framework of Interest Rate Parity (IRP).
+
+### Part 1: Interest Rate Parity
+
+Interest Rate Parity is a no-arbitrage condition linking spot exchange rates, forward exchange rates, and interest rates in two countries. The **Covered Interest Rate Parity (CIP)** condition states:
+
+$$
+F = S \times \frac{1 + r_d}{1 + r_f}
+$$
+
+where $S$ is the current spot exchange rate (domestic currency per unit of foreign currency), $F$ is the forward exchange rate for the same maturity, $r_d$ is the domestic interest rate, and $r_f$ is the foreign interest rate.
+
+Select a currency pair of your choice (e.g., USD/EUR, USD/GBP, USD/JPY). Using current market data:
+
+1. Look up the current **spot exchange rate** for your currency pair.
+2. Look up a **short-term interest rate** (e.g., 3-month government bill yield or interbank rate) for each of the two countries.
+3. Compute the **CIP-implied forward rate** using the formula above.
+4. Look up the actual **3-month forward rate** quoted in the market (forward rates are widely published for major currency pairs).
+5. Compare your CIP-implied forward rate to the market forward rate. Are they close? If there is a discrepancy, discuss whether a covered interest arbitrage profit would theoretically be available, and why such deviations are rare in practice for major currency pairs.
+
+### Part 2: Hedging a Foreign Currency Cash Flow
+
+Suppose a U.S.-based multinational expects to receive a payment in the foreign currency you selected --- specifically, an amount equal to **1,000,000 units** of the foreign currency --- in exactly 90 days. The firm is concerned that the foreign currency will depreciate against the USD before payment is received, reducing the dollar value of the receipt.
+
+Demonstrate how the firm can **lock in a dollar value today** using a forward contract:
+
+1. Calculate the **unhedged dollar receipt** if the spot rate in 90 days equals today's spot rate (i.e., no change).
+2. Calculate the **hedged dollar receipt** by applying the 3-month forward rate you looked up in Part 1.
+3. Construct a simple scenario table showing the hedged vs. unhedged dollar receipt if the spot rate in 90 days is (a) 5% higher than today, (b) unchanged, and (c) 5% lower than today. In each scenario, compute the **gain or loss from hedging** relative to leaving the position unhedged.
+
+### Part 3: Interest Rate Risk for a Multinational Borrower
+
+Now consider the same multinational firm, which needs to borrow funds in the foreign currency. Suppose it borrows **1,000,000 units** of the foreign currency at a **floating interest rate** tied to a benchmark (such as EURIBOR or SONIA, depending on your currency pair). The firm is worried that foreign interest rates will rise before the next rate reset.
+
+1. Briefly explain in your own words why a rise in the foreign benchmark rate increases the firm's borrowing cost and how this interacts with the exchange rate risk already present in Part 2.
+2. Describe (without necessarily pricing it) how an **interest rate swap** or a **cross-currency swap** could help the firm convert its floating-rate foreign-currency liability into a fixed-rate USD liability, thereby hedging both interest rate risk and currency risk simultaneously.
+3. Using the interest rates from Part 1, calculate the firm's **all-in annual interest cost** (in USD terms) under the hedged position: assume the firm borrows at the foreign rate $r_f$, converts the proceeds at the spot rate, and has locked in repayment of the principal at the forward rate. Compare this to simply borrowing at the domestic rate $r_d$. Is the result consistent with CIP? Explain why or why not.
+
+### Submission Requirements
+
+Each student must submit:
+
+1. A spreadsheet showing all data, calculations, and the scenario table from Part 2.
+2. The sources for all market data (spot rate, forward rate, and interest rates), including the date on which the data were retrieved.
+3. Short written responses (a few sentences each) to the discussion questions in Parts 1 and 3.
+
+A successful project will correctly apply the CIP formula, correctly compute hedged and unhedged cash flows across scenarios, and provide a clear explanation of how forward contracts and swaps mitigate currency and interest rate risk for a multinational firm.
 
 
 ## Project 4: Portfolio Construction and CAPM Analysis
