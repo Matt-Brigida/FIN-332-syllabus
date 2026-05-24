@@ -308,8 +308,8 @@ Demonstrate how the firm can **lock in a dollar value today** using a forward co
 Now consider the same multinational firm, which needs to borrow funds in the foreign currency. Suppose it borrows **1,000,000 units** of the foreign currency at a **floating interest rate** tied to a benchmark (such as EURIBOR or SONIA, depending on your currency pair). The firm is worried that foreign interest rates will rise before the next rate reset.
 
 1. Briefly explain in your own words why a rise in the foreign benchmark rate increases the firm's borrowing cost and how this interacts with the exchange rate risk already present in Part 2.
-2. Describe (without necessarily pricing it) how an **interest rate swap** or a **cross-currency swap** could help the firm convert its floating-rate foreign-currency liability into a fixed-rate USD liability, thereby hedging both interest rate risk and currency risk simultaneously.
-3. Using the interest rates from Part 1, calculate the firm's **all-in annual interest cost** (in USD terms) under the hedged position: assume the firm borrows at the foreign rate $r_f$, converts the proceeds at the spot rate, and has locked in repayment of the principal at the forward rate. Compare this to simply borrowing at the domestic rate $r_d$. Is the result consistent with CIP? Explain why or why not.
+<!---2. Describe (without necessarily pricing it) how an **interest rate swap** or a **cross-currency swap** could help the firm convert its floating-rate foreign-currency liability into a fixed-rate USD liability, thereby hedging both interest rate risk and currency risk simultaneously.-->
+2. Using the interest rates from Part 1, calculate the firm's **all-in annual interest cost** (in USD terms) under the hedged position: assume the firm borrows at the foreign rate $r_f$, converts the proceeds at the spot rate, and has locked in repayment of the principal at the forward rate. Compare this to simply borrowing at the domestic rate $r_d$. Is the result consistent with CIP? Explain why or why not.
 
 ### Submission Requirements
 
