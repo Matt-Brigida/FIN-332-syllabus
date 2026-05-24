@@ -6797,45 +6797,12 @@ accepted.
 %
 -->
 </div>
-<div id="project-1-trading-assignments" class="section level2">
-<h2>Project 1: Trading Assignments</h2>
-<p>Trading assignments are here: <a href="https://github.com/Matt-Brigida/fin-332-trading-assignments" class="uri">https://github.com/Matt-Brigida/fin-332-trading-assignments</a>
-Students will complete each of these during the semester. <strong>If you
-do not make the trades you will receive a 0 for the assignment even if
-you attempt to answer some of the questions</strong>.</p>
-<p><em>Market Trading Hours</em>: The stock and option markets are open
-from 9:30 am to 4pm each non-holiday weekday. Therefore, you must make
-your trades within these times.</p>
-<!-- I may assign other several homeworks throughout the semester that involve either trading in your brokerage accounts, or downloading data in R and performing some calculation/analyses. If I give pop quizzes, these grades will be included here.  -->
-<p>Here is a video on the first 3 trading assignments: <a href="https://www.youtube.com/watch?v=uG7l0WaATDs" class="uri">https://www.youtube.com/watch?v=uG7l0WaATDs</a></p>
-<p>And a video on shorting stock: <a href="https://www.youtube.com/watch?v=bTP19kqiKEk" class="uri">https://www.youtube.com/watch?v=bTP19kqiKEk</a></p>
-<div id="brokerage-accounts" class="section level3">
-<h3>Brokerage Accounts</h3>
-<p>We will use paper trading accounts provided by Interactive Brokers.
-These trading accounts are the exact same as the actual brokerage
-accounts—except the money isn’t real. You will have access to (and real
-data from) stock, bond, commodity, and foreign exchange markets. While
-the data alone is worth a fair amount of money, Interactive Brokers is
-offering the accounts to us for free. Keep this in mind while following
-the directions to set up your account customer service will be
-nonexistent. <strong>If you lose your password, or forget your username,
-etc, you will not have an account for the semester.</strong> In this
-case you will have to trade in another student’s account, or mine.
-Please pay attention while setting up your account, and write everything
-down.</p>
-<p>See <a href="#brti"><strong>here</strong></a> example of the data we
-can pull using our IB accounts. You may want to think if interesting
-projects/analyses you can do with access to such data.</p>
-<p><a href="https://www.ibkr.com/quant">Also check out the IB Quant
-Blog. It is a very good resource.</a></p>
-</div>
-</div>
-<div id="project-2-earnings-announcement-event-study" class="section level2">
-<h2>Project 2: Earnings Announcement Event Study</h2>
+<div id="project-1-earnings-announcement-event-study" class="section level2">
+<h2>Project 1: Earnings Announcement Event Study</h2>
 <p>Each student will complete an event study on a U.S. common stock
 whose ticker begins with the same first letter as the student’s last
 name. The event is the company’s most recent earnings announcement prior
-to the start of the semester. If no suitable NYSE- or Nasdaq-listed
+to the start of the semester. If no suitable NYSE or Nasdaq-listed
 common stock is available for that letter, the student should use the
 next letter in the last name. If that also fails, the student should
 contact the instructor for an approved fallback ticker. ETFs, mutual
@@ -6911,37 +6878,9 @@ correctly compute stock returns, market returns, abnormal returns, and
 <span class="math inline">\(CAR[-1,+1]\)</span>, and provide a brief
 interpretation of the market’s reaction to the earnings
 announcement.</p>
-<!--
-## Project 3: Black-Scholes Project
-
-First, choose a stock whose ticker starts with the same letter that your last name starts with.  For example, since my last name is Brigida I may choose Boeing (ticker BA).  Once you have chosen your stock create a spreadsheet which will:
-
-1.  Value an option on the stock using the Black-Scholes (1973) option pricing model.
-2.  Calculate the stock's historical annualized volatility, and get an estimate of the implied volatility. To do so the you must show it is able to download a recent time series of the underlying stock price, convert these prices into a time series of returns, calculate the standard deviation of the returns, and then annualize the standard deviation (this is the stock annualized volatility which is a parameter in the option pricing model).
-3.  [Calculate the value of the option by Monte Carlo.](https://www.youtube.com/watch?v=vLCXAKzaW5A).  [Background on the valuation.](https://www.youtube.com/watch?v=HOSf-lk9JOw)
-4.  Calculate the proportion of your stock's return variance which is from the market and which is due to firm specific uncertainty.
-
-You should be ready to explain any part of the spreadsheet.  For 4. consider the following regression:
-
-$r_s = \alpha + \beta_s r_m + e_s$
-
-where $r_s$ are returns on your stock and $r_m$ are market returns.  Then:
-
-$Var(r_s) = (\beta_s)^2 Var(r_m) + Var(e_s)$
-
-because:
-
-$Cov(r_m, e_s) = 0$
-
-Note, $Var(X)$ denotes the variance of $X$, and is also often written as $\sigma^2_X$.
-
-$(\beta_s)^2 Var(r_m)$ is the market's contribution to your stock's variance, and:
-
-$Var(e_s)$  is the firm specific contribution.
--->
 </div>
-<div id="project-3-currency-markets-and-multinational-hedging" class="section level2">
-<h2>Project 3: Currency Markets and Multinational Hedging</h2>
+<div id="project-2-currency-markets-and-multinational-hedging" class="section level2">
+<h2>Project 2: Currency Markets and Multinational Hedging</h2>
 <p>Multinational corporations routinely face two intertwined risks:
 exchange rate movements and interest rate differentials across
 countries. This project asks you to explore both risks using real market
@@ -7040,8 +6979,49 @@ clear explanation of how forward contracts and swaps mitigate currency
 and interest rate risk for a multinational firm.</p>
 </div>
 </div>
-<div id="project-4-portfolio-construction-and-capm-analysis" class="section level2">
-<h2>Project 4: Portfolio Construction and CAPM Analysis</h2>
+<div id="project-2-alternative-black-scholes-project" class="section level2">
+<h2>Project 2 (Alternative): Black-Scholes Project</h2>
+<p>First, choose a stock whose ticker starts with the same letter that
+your last name starts with. For example, since my last name is Brigida I
+may choose Boeing (ticker BA). Once you have chosen your stock create a
+spreadsheet which will:</p>
+<ol style="list-style-type: decimal">
+<li>Value an option on the stock using the Black-Scholes (1973) option
+pricing model.</li>
+<li>Calculate the stock’s historical annualized volatility, and get an
+estimate of the implied volatility. To do so the you must show it is
+able to download a recent time series of the underlying stock price,
+convert these prices into a time series of returns, calculate the
+standard deviation of the returns, and then annualize the standard
+deviation (this is the stock annualized volatility which is a parameter
+in the option pricing model).</li>
+<li><a href="https://www.youtube.com/watch?v=vLCXAKzaW5A">Calculate the
+value of the option by Monte Carlo.</a>. <a href="https://www.youtube.com/watch?v=HOSf-lk9JOw">Background on the
+valuation.</a></li>
+<li>Calculate the proportion of your stock’s return variance which is
+from the market and which is due to firm specific uncertainty.</li>
+</ol>
+<p>You should be ready to explain any part of the spreadsheet. For 4.
+consider the following regression:</p>
+<p><span class="math inline">\(r_s = \alpha + \beta_s r_m +
+e_s\)</span></p>
+<p>where <span class="math inline">\(r_s\)</span> are returns on your
+stock and <span class="math inline">\(r_m\)</span> are market returns.
+Then:</p>
+<p><span class="math inline">\(Var(r_s) = (\beta_s)^2 Var(r_m) +
+Var(e_s)\)</span></p>
+<p>because:</p>
+<p><span class="math inline">\(Cov(r_m, e_s) = 0\)</span></p>
+<p>Note, <span class="math inline">\(Var(X)\)</span> denotes the
+variance of <span class="math inline">\(X\)</span>, and is also often
+written as <span class="math inline">\(\sigma^2_X\)</span>.</p>
+<p><span class="math inline">\((\beta_s)^2 Var(r_m)\)</span> is the
+market’s contribution to your stock’s variance, and:</p>
+<p><span class="math inline">\(Var(e_s)\)</span> is the firm specific
+contribution.</p>
+</div>
+<div id="project-3-portfolio-construction-and-capm-analysis" class="section level2">
+<h2>Project 3: Portfolio Construction and CAPM Analysis</h2>
 <p>Each student will construct and evaluate a portfolio of common
 stocks. The purpose of the project is to measure how diversification
 affects risk and return, and to relate the portfolio’s expected return
@@ -7113,16 +7093,12 @@ Sharpe = \frac{\bar{R}_p - R_f}{\sigma_p}
 \]</span></p>
 <p>Each student must submit:</p>
 <ol style="list-style-type: decimal">
-<li>a spreadsheet showing all calculations<br />
-</li>
-<li>a table with the four stocks and their sectors<br />
-</li>
+<li>a spreadsheet showing all calculations</li>
+<li>a table with the four stocks and their sectors</li>
 <li>the portfolio’s annualized return, annualized standard deviation,
-beta, CAPM expected return, and Sharpe ratio<br />
-</li>
+beta, CAPM expected return, and Sharpe ratio</li>
 <li>one chart comparing the cumulative return of the portfolio to SPY
-over the sample period<br />
-</li>
+over the sample period</li>
 <li>short responses to the following questions:
 <ul>
 <li>Did diversification reduce risk relative to the individual
@@ -7137,6 +7113,45 @@ Why or why not?</li>
 annualized risk and return, beta, CAPM expected return, and the Sharpe
 ratio, and will provide a brief interpretation of the portfolio’s
 performance.</p>
+</div>
+<div id="project-4-trading-assignments" class="section level2">
+<h2>Project 4: Trading Assignments</h2>
+<p>Trading assignments are here: <a href="https://github.com/Matt-Brigida/fin-332-trading-assignments" class="uri">https://github.com/Matt-Brigida/fin-332-trading-assignments</a>
+Students will complete each of these during the semester. <strong>If you
+do not make the trades you will receive a 0 for the assignment even if
+you attempt to answer some of the questions</strong>. Don’t wait until
+the last minute to complete these assignments. Ideally, you should
+complete these while also completing the other projects.</p>
+<p><em>Market Trading Hours</em>: The stock and option markets are open
+from 9:30 am to 4pm each non-holiday weekday. Therefore, you must make
+your trades within these times.</p>
+<p>Here is a video on the first 3 trading assignments: <a href="https://www.youtube.com/watch?v=uG7l0WaATDs" class="uri">https://www.youtube.com/watch?v=uG7l0WaATDs</a></p>
+<p>And a video on shorting stock: <a href="https://www.youtube.com/watch?v=bTP19kqiKEk" class="uri">https://www.youtube.com/watch?v=bTP19kqiKEk</a></p>
+<div id="brokerage-accounts" class="section level3">
+<h3>Brokerage Accounts</h3>
+<p>I will request you paper trading accounts provided by Interactive
+Brokers. These trading accounts are the exact same as the actual
+brokerage accounts—except the money isn’t real. You will have access to
+(and real data from) stock, bond, commodity, and foreign exchange
+markets. While the data alone is worth a fair amount of money,
+Interactive Brokers is offering the accounts to us for free. Keep this
+in mind while following the directions to set up your account customer
+service will be nonexistent. <strong>If you lose your password, or
+forget your username, etc, you will not have an account for the
+semester.</strong> In this case you will have to use the demo* account.
+Please pay attention while setting up your account, and write everything
+down.</p>
+<p>*You can also use a demo account. This account will not save your
+trades, so you will have to take a screenshot of each trade and submit
+it with your trading assignment. Without screenshots I cannot verify you
+have made the trades. If you use the account I request for you, then I
+am able to see your trades without screenshots.</p>
+<p>See <a href="#brti"><strong>here</strong></a> example of the data we
+can pull using our IB accounts (though you won’t need to do this in any
+of your trading assignments). You may want to think if interesting
+projects/analyses you can do with access to such data. <a href="https://www.ibkr.com/quant">Also check out the IB Quant Blog. It
+is a very good resource.</a></p>
+</div>
 </div>
 <div id="exam" class="section level2">
 <h2>Exam</h2>
@@ -7321,11 +7336,11 @@ year.</p>
 <div id="due-dates" class="section level2">
 <h2>Due Dates</h2>
 <ul>
-<li>Project 1:</li>
-<li>Project 2:</li>
-<li>Project 3:</li>
-<li>Project 4:</li>
-<li>Final Exam:</li>
+<li><em>Project 1 Due:</em> June 5</li>
+<li><em>Project 2 Due:</em> June 19</li>
+<li><em>Project 3 Due:</em> July 2</li>
+<li><em>Project 4 Due:</em> July 16</li>
+<li><em>Final Exam Due:</em> July 21</li>
 </ul>
 <!-- ## Tentative Outline -->
 <!-- **All due dates are in the ouline below.  There are no due dates listed in D2L.** -->
@@ -7458,14 +7473,16 @@ important for exam dates.</li>
        Objectives and Learning Outcomes:</a></li>
        <li><a href="#learning-goals-and-objectives" id="toc-learning-goals-and-objectives">Learning Goals and
        Objectives</a></li>
-       <li><a href="#project-1-trading-assignments" id="toc-project-1-trading-assignments">Project 1: Trading
-       Assignments</a></li>
-       <li><a href="#project-2-earnings-announcement-event-study" id="toc-project-2-earnings-announcement-event-study">Project 2:
+       <li><a href="#project-1-earnings-announcement-event-study" id="toc-project-1-earnings-announcement-event-study">Project 1:
        Earnings Announcement Event Study</a></li>
-       <li><a href="#project-3-currency-markets-and-multinational-hedging" id="toc-project-3-currency-markets-and-multinational-hedging">Project
-       3: Currency Markets and Multinational Hedging</a></li>
-       <li><a href="#project-4-portfolio-construction-and-capm-analysis" id="toc-project-4-portfolio-construction-and-capm-analysis">Project
-       4: Portfolio Construction and CAPM Analysis</a></li>
+       <li><a href="#project-2-currency-markets-and-multinational-hedging" id="toc-project-2-currency-markets-and-multinational-hedging">Project
+       2: Currency Markets and Multinational Hedging</a></li>
+       <li><a href="#project-2-alternative-black-scholes-project" id="toc-project-2-alternative-black-scholes-project">Project 2
+       (Alternative): Black-Scholes Project</a></li>
+       <li><a href="#project-3-portfolio-construction-and-capm-analysis" id="toc-project-3-portfolio-construction-and-capm-analysis">Project
+       3: Portfolio Construction and CAPM Analysis</a></li>
+       <li><a href="#project-4-trading-assignments" id="toc-project-4-trading-assignments">Project 4: Trading
+       Assignments</a></li>
        <li><a href="#exam" id="toc-exam">Exam</a></li>
        <li><a href="#course-communication" id="toc-course-communication">Course Communication</a></li>
        <li><a href="#missed-classes" id="toc-missed-classes">Missed

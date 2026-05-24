@@ -148,47 +148,10 @@ accepted.
 %
 -->
 
-## Project 1: Trading Assignments
 
-Trading assignments are here: https://github.com/Matt-Brigida/fin-332-trading-assignments  Students will complete each of these during the semester.  **If you do not make the trades you will receive a 0 for the assignment even if you attempt to answer some of the questions**.  
+## Project 1: Earnings Announcement Event Study
 
-*Market Trading Hours*: The stock and option markets are open from 9:30 am to 4pm each non-holiday weekday.  Therefore, you must make your trades within these times.
-
-<!-- I may assign other several homeworks throughout the semester that involve either trading in your brokerage accounts, or downloading data in R and performing some calculation/analyses. If I give pop quizzes, these grades will be included here.  -->
-
-Here is a video on the first 3 trading assignments: https://www.youtube.com/watch?v=uG7l0WaATDs
-
-```{r eval=FALSE}
-# suggest_embed("https://www.youtube.com/watch?v=uG7l0WaATDs")
-embed_youtube("uG7l0WaATDs")
-```
-
-And a video on shorting stock: https://www.youtube.com/watch?v=bTP19kqiKEk
-
-```{r eval=FALSE}
-# suggest_embed("https://www.youtube.com/watch?v=bTP19kqiKEk")
-embed_youtube("bTP19kqiKEk")
-```
-
-
-### Brokerage Accounts
-
-We will use paper trading accounts provided by Interactive Brokers. These
-trading accounts are the exact same as the actual brokerage accounts---except the money isn’t real.
-You will have access to (and real data from) stock, bond, commodity, and foreign exchange markets.
-While the data alone is worth a fair amount of money, Interactive Brokers is offering the accounts to us
-for free. Keep this in mind while following the directions to set up your account customer service will
-be nonexistent. **If you lose your password, or forget your username, etc, you will not have an
-account for the semester.** In this case you will have to trade in another student’s account, or mine.
-Please pay attention while setting up your account, and write everything down.
-
-See [**here**](#brti) example of the data we can pull using our IB accounts.  You may want to think if interesting projects/analyses you can do with access to such data.
-
-[Also check out the IB Quant Blog.  It is a very good resource.](https://www.ibkr.com/quant)
-
-## Project 2: Earnings Announcement Event Study
-
-Each student will complete an event study on a U.S. common stock whose ticker begins with the same first letter as the student’s last name. The event is the company’s most recent earnings announcement prior to the start of the semester. If no suitable NYSE- or Nasdaq-listed common stock is available for that letter, the student should use the next letter in the last name. If that also fails, the student should contact the instructor for an approved fallback ticker. ETFs, mutual funds, ADRs, preferred shares, and OTC stocks may not be used.
+Each student will complete an event study on a U.S. common stock whose ticker begins with the same first letter as the student’s last name. The event is the company’s most recent earnings announcement prior to the start of the semester. If no suitable NYSE or Nasdaq-listed common stock is available for that letter, the student should use the next letter in the last name. If that also fails, the student should contact the instructor for an approved fallback ticker. ETFs, mutual funds, ADRs, preferred shares, and OTC stocks may not be used.
 
 The purpose of the project is to measure how the stock reacted to its most recent earnings news. Students must identify the earnings announcement date using the company’s investor relations page, earnings press release, or SEC filing. The event date is defined as the **first trading day on which the market could react to the earnings news**. If the earnings release was issued **before the market opened**, that trading day is day 0. If the earnings release was issued **after the market closed**, the next trading day is day 0.
 
@@ -242,36 +205,7 @@ Each student must submit:
 A successful project will correctly identify the event date, correctly compute stock returns, market returns, abnormal returns, and $CAR[-1,+1]$, and provide a brief interpretation of the market’s reaction to the earnings announcement.
 
 
-<!--
-## Project 3: Black-Scholes Project
-
-First, choose a stock whose ticker starts with the same letter that your last name starts with.  For example, since my last name is Brigida I may choose Boeing (ticker BA).  Once you have chosen your stock create a spreadsheet which will:
-
-1.  Value an option on the stock using the Black-Scholes (1973) option pricing model.
-2.  Calculate the stock's historical annualized volatility, and get an estimate of the implied volatility. To do so the you must show it is able to download a recent time series of the underlying stock price, convert these prices into a time series of returns, calculate the standard deviation of the returns, and then annualize the standard deviation (this is the stock annualized volatility which is a parameter in the option pricing model).
-3.  [Calculate the value of the option by Monte Carlo.](https://www.youtube.com/watch?v=vLCXAKzaW5A).  [Background on the valuation.](https://www.youtube.com/watch?v=HOSf-lk9JOw)
-4.  Calculate the proportion of your stock's return variance which is from the market and which is due to firm specific uncertainty.
-
-You should be ready to explain any part of the spreadsheet.  For 4. consider the following regression:
-
-$r_s = \alpha + \beta_s r_m + e_s$
-
-where $r_s$ are returns on your stock and $r_m$ are market returns.  Then:
-
-$Var(r_s) = (\beta_s)^2 Var(r_m) + Var(e_s)$
-
-because:
-
-$Cov(r_m, e_s) = 0$
-
-Note, $Var(X)$ denotes the variance of $X$, and is also often written as $\sigma^2_X$.
-
-$(\beta_s)^2 Var(r_m)$ is the market's contribution to your stock's variance, and:
-
-$Var(e_s)$  is the firm specific contribution.
--->
-
-## Project 3: Currency Markets and Multinational Hedging
+## Project 2: Currency Markets and Multinational Hedging
 
 Multinational corporations routinely face two intertwined risks: exchange rate movements and interest rate differentials across countries. This project asks you to explore both risks using real market data and the theoretical framework of Interest Rate Parity (IRP).
 
@@ -322,7 +256,36 @@ Each student must submit:
 A successful project will correctly apply the CIP formula, correctly compute hedged and unhedged cash flows across scenarios, and provide a clear explanation of how forward contracts and swaps mitigate currency and interest rate risk for a multinational firm.
 
 
-## Project 4: Portfolio Construction and CAPM Analysis
+## Project 2 (Alternative): Black-Scholes Project
+
+First, choose a stock whose ticker starts with the same letter that your last name starts with.  For example, since my last name is Brigida I may choose Boeing (ticker BA).  Once you have chosen your stock create a spreadsheet which will:
+
+1.  Value an option on the stock using the Black-Scholes (1973) option pricing model.
+2.  Calculate the stock's historical annualized volatility, and get an estimate of the implied volatility. To do so the you must show it is able to download a recent time series of the underlying stock price, convert these prices into a time series of returns, calculate the standard deviation of the returns, and then annualize the standard deviation (this is the stock annualized volatility which is a parameter in the option pricing model).
+3.  [Calculate the value of the option by Monte Carlo.](https://www.youtube.com/watch?v=vLCXAKzaW5A).  [Background on the valuation.](https://www.youtube.com/watch?v=HOSf-lk9JOw)
+4.  Calculate the proportion of your stock's return variance which is from the market and which is due to firm specific uncertainty.
+
+You should be ready to explain any part of the spreadsheet.  For 4. consider the following regression:
+
+$r_s = \alpha + \beta_s r_m + e_s$
+
+where $r_s$ are returns on your stock and $r_m$ are market returns.  Then:
+
+$Var(r_s) = (\beta_s)^2 Var(r_m) + Var(e_s)$
+
+because:
+
+$Cov(r_m, e_s) = 0$
+
+Note, $Var(X)$ denotes the variance of $X$, and is also often written as $\sigma^2_X$.
+
+$(\beta_s)^2 Var(r_m)$ is the market's contribution to your stock's variance, and:
+
+$Var(e_s)$  is the firm specific contribution.
+
+
+
+## Project 3: Portfolio Construction and CAPM Analysis
 
 Each student will construct and evaluate a portfolio of common stocks. The purpose of the project is to measure how diversification affects risk and return, and to relate the portfolio’s expected return to its systematic risk.
 
@@ -393,16 +356,46 @@ $$
 
 Each student must submit:
 
-1. a spreadsheet showing all calculations  
-2. a table with the four stocks and their sectors  
-3. the portfolio’s annualized return, annualized standard deviation, beta, CAPM expected return, and Sharpe ratio  
-4. one chart comparing the cumulative return of the portfolio to SPY over the sample period  
+1. a spreadsheet showing all calculations
+2. a table with the four stocks and their sectors
+3. the portfolio’s annualized return, annualized standard deviation, beta, CAPM expected return, and Sharpe ratio
+4. one chart comparing the cumulative return of the portfolio to SPY over the sample period
 5. short responses to the following questions:
    - Did diversification reduce risk relative to the individual stocks?
    - Was the portfolio’s realized return above or below its CAPM expected return?
    - Would you consider this a strong portfolio for a passive investor? Why or why not?
 
 A successful project will correctly calculate portfolio returns, annualized risk and return, beta, CAPM expected return, and the Sharpe ratio, and will provide a brief interpretation of the portfolio’s performance.
+
+## Project 4: Trading Assignments
+
+Trading assignments are here: https://github.com/Matt-Brigida/fin-332-trading-assignments  Students will complete each of these during the semester.  **If you do not make the trades you will receive a 0 for the assignment even if you attempt to answer some of the questions**.  Don't wait until the last minute to complete these assignments.  Ideally, you should complete these while also completing the other projects. 
+
+*Market Trading Hours*: The stock and option markets are open from 9:30 am to 4pm each non-holiday weekday.  Therefore, you must make your trades within these times.
+
+Here is a video on the first 3 trading assignments: https://www.youtube.com/watch?v=uG7l0WaATDs
+
+```{r eval=FALSE}
+# suggest_embed("https://www.youtube.com/watch?v=uG7l0WaATDs")
+embed_youtube("uG7l0WaATDs")
+```
+
+And a video on shorting stock: https://www.youtube.com/watch?v=bTP19kqiKEk
+
+```{r eval=FALSE}
+# suggest_embed("https://www.youtube.com/watch?v=bTP19kqiKEk")
+embed_youtube("bTP19kqiKEk")
+```
+
+
+### Brokerage Accounts
+
+I will request you paper trading accounts provided by Interactive Brokers. These trading accounts are the exact same as the actual brokerage accounts---except the money isn’t real. You will have access to (and real data from) stock, bond, commodity, and foreign exchange markets. While the data alone is worth a fair amount of money, Interactive Brokers is offering the accounts to us for free. Keep this in mind while following the directions to set up your account customer service will be nonexistent. **If you lose your password, or forget your username, etc, you will not have an account for the semester.** In this case you will have to use the demo* account.  Please pay attention while setting up your account, and write everything down.
+
+*You can also use a demo account.  This account will not save your trades, so you will have to take a screenshot of each trade and submit it with your trading assignment. Without screenshots I cannot verify you have made the trades.  If you use the account I request for you, then I am able to see your trades without screenshots.
+
+See [**here**](#brti) example of the data we can pull using our IB accounts (though you won't need to do this in any of your trading assignments).  You may want to think if interesting projects/analyses you can do with access to such data.  [Also check out the IB Quant Blog.  It is a very good resource.](https://www.ibkr.com/quant)
+
 
 ## Exam
 
@@ -528,11 +521,11 @@ If you *need* to meet with me to take this course however, you should drop the 3
 
 ## Due Dates
 
-- Project 1: 
-- Project 2: 
-- Project 3: 
-- Project 4: 
-- Final Exam:
+- *Project 1 Due:* June 5
+- *Project 2 Due:* June 19
+- *Project 3 Due:* July 2
+- *Project 4 Due:* July 16
+- *Final Exam Due:* July 21
 
 <!-- ## Tentative Outline -->
 
